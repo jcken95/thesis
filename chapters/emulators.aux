@@ -1,0 +1,195 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\citation{Bailey2014,Pedersen2020}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Emulators }{29}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{Ch:Emulators}{{3}{29}{Emulators}{chapter.3}{}}
+\newlabel{Ch:Emulators@cref}{{[chapter][3][]3}{[1][29][]29}}
+\citation{Rasmussen2006Gpfm}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Gaussian process priors}{30}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Covariance functions}{30}{subsection.3.1.1}\protected@file@percent }
+\citation{Gneiting2002}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Plot showing how $\theta $ affects the rate of decay of the correlation between model outputs as a function of the distance between inputs. Correlation functions with smaller values of $\theta $ decays to zero faster than those with a larger value of $\theta $.\relax }}{32}{figure.caption.8}\protected@file@percent }
+\newlabel{Fig:sqexp}{{3.1}{32}{Plot showing how $\theta $ affects the rate of decay of the correlation between model outputs as a function of the distance between inputs. Correlation functions with smaller values of $\theta $ decays to zero faster than those with a larger value of $\theta $.\relax }{figure.caption.8}{}}
+\newlabel{Fig:sqexp@cref}{{[figure][1][3]3.1}{[1][31][]32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Draws from a GP prior with squared exponential covariance function ($\sigma ^2 = 1$) for varying values of $\theta $. Larger lengthscales correspond to less wiggly functions; their behaviour is less erratic.\relax }}{33}{figure.caption.9}\protected@file@percent }
+\newlabel{Fig:random-funcs}{{3.2}{33}{Draws from a GP prior with squared exponential covariance function ($\sigma ^2 = 1$) for varying values of $\theta $. Larger lengthscales correspond to less wiggly functions; their behaviour is less erratic.\relax }{figure.caption.9}{}}
+\newlabel{Fig:random-funcs@cref}{{[figure][2][3]3.2}{[1][31][]33}}
+\citation{Gramacy12}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Combining covariance functions}{34}{subsection.3.1.2}\protected@file@percent }
+\citation{Sacks89}
+\newlabel{Eq:add-covar}{{3.11}{35}{Combining covariance functions}{equation.3.1.11}{}}
+\newlabel{Eq:add-covar@cref}{{[equation][11][3]3.11}{[1][35][]35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Mean functions}{35}{subsection.3.1.3}\protected@file@percent }
+\citation{Henderson09,Zhang2019}
+\citation{Xu16,Vernon2010}
+\citation{Ohagan01,Fricker2013,Fisher2021}
+\citation{Seshadri2020}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Some realisations of a GP where the covariance structure is constructed by the addition of a squared exponential covariance function with a linear covariance function, as in \cref  {Eq:add-covar}.\relax }}{36}{figure.caption.10}\protected@file@percent }
+\newlabel{Fig:mix-kern}{{3.3}{36}{Some realisations of a GP where the covariance structure is constructed by the addition of a squared exponential covariance function with a linear covariance function, as in \cref {Eq:add-covar}.\relax }{figure.caption.10}{}}
+\newlabel{Fig:mix-kern@cref}{{[figure][3][3]3.3}{[1][35][]36}}
+\citation{Oakley2002}
+\citation{Gramacy12}
+\citation{Andrianakis2012}
+\citation{Wilson2015}
+\citation{Solin2020,Riutort2023}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}A general Gaussian process posterior}{37}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Parameter inference}{37}{subsection.3.2.1}\protected@file@percent }
+\citation{Sacks89}
+\citation{Svalova2021}
+\citation{Baker2020a}
+\citation{BDA3}
+\citation{Oakley2002a}
+\newlabel{Eq:int-mean}{{3.15}{38}{Parameter inference}{equation.3.2.15}{}}
+\newlabel{Eq:int-mean@cref}{{[equation][15][3]3.15}{[1][38][]38}}
+\citation{Rasmussen2006Gpfm}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Posterior predictive distribution}{39}{subsection.3.2.2}\protected@file@percent }
+\newlabel{Eq:MV1}{{3.19}{40}{Posterior predictive distribution}{equation.3.2.19}{}}
+\newlabel{Eq:MV1@cref}{{[equation][19][3]3.19}{[1][39][]40}}
+\newlabel{Eq:MV2}{{3.20}{40}{Posterior predictive distribution}{equation.3.2.20}{}}
+\newlabel{Eq:MV2@cref}{{[equation][20][3]3.20}{[1][39][]40}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Specific examples}{40}{subsection.3.2.3}\protected@file@percent }
+\newlabel{Eq:toy-fn}{{3.21}{40}{Specific examples}{equation.3.2.21}{}}
+\newlabel{Eq:toy-fn@cref}{{[equation][21][3]3.21}{[1][40][]40}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Our prior specification for the simulator specified by \Cref  {Eq:toy-fn}. The simulator is shown as the blue line, emulator prior mean as the black line and uncertainty is represented by the red bands; $\mu (x) \pm (1,2,3)\sqrt  {K(x,x)}$.\relax }}{41}{figure.caption.11}\protected@file@percent }
+\newlabel{Fig:prior}{{3.4}{41}{Our prior specification for the simulator specified by \Cref {Eq:toy-fn}. The simulator is shown as the blue line, emulator prior mean as the black line and uncertainty is represented by the red bands; $\mu (x) \pm (1,2,3)\sqrt {K(x,x)}$.\relax }{figure.caption.11}{}}
+\newlabel{Fig:prior@cref}{{[figure][4][3]3.4}{[1][40][]41}}
+\citation{Oakley04}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces The posterior distribution for the simulator specified by \Cref  {Eq:toy-fn}. The simulator is shown as the blue line, the emulator posterior mean as the black line and posterior uncertainty is represented by the red bands; $m^{*} (x) \pm (1,2,3)\sqrt  { v^{*}(x) } $. The left hand plot shows how the emulator captures local variation in $f(\cdot )$ whereas the right hand plot illustrates the estimated global variation.\relax }}{42}{figure.caption.12}\protected@file@percent }
+\newlabel{Fig:posterior}{{3.5}{42}{The posterior distribution for the simulator specified by \Cref {Eq:toy-fn}. The simulator is shown as the blue line, the emulator posterior mean as the black line and posterior uncertainty is represented by the red bands; $m^{*} (x) \pm (1,2,3)\sqrt { v^{*}(x) } $. The left hand plot shows how the emulator captures local variation in $f(\cdot )$ whereas the right hand plot illustrates the estimated global variation.\relax }{figure.caption.12}{}}
+\newlabel{Fig:posterior@cref}{{[figure][5][3]3.5}{[1][40][]42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Stochastic computer simulators}{42}{subsection.3.2.4}\protected@file@percent }
+\newlabel{Eq:homgp1}{{3.22}{43}{Stochastic computer simulators}{equation.3.2.22}{}}
+\newlabel{Eq:homgp1@cref}{{[equation][22][3]3.22}{[1][43][]43}}
+\newlabel{Eq:homgp2}{{3.23}{43}{Stochastic computer simulators}{equation.3.2.23}{}}
+\newlabel{Eq:homgp2@cref}{{[equation][23][3]3.23}{[1][43][]43}}
+\newlabel{Eq:varf}{{3.25}{43}{Stochastic computer simulators}{equation.3.2.25}{}}
+\newlabel{Eq:varf@cref}{{[equation][25][3]3.25}{[1][43][]43}}
+\newlabel{Eq:vary}{{3.26}{43}{Stochastic computer simulators}{equation.3.2.26}{}}
+\newlabel{Eq:vary@cref}{{[equation][26][3]3.26}{[1][43][]43}}
+\citation{Zhang2019}
+\citation{Overstall2017}
+\citation{Frazier2018}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces An emulator for a stochastic simulator. Solid blue line is simulator mean with blue dashed lines being $95\%$ probability bands. Solid black line is emulator mean, dashed black lines are a $95\%$ probability interval for $y(x)$ and the red band is a $95\%$ probability interval for $f(x)$.\relax }}{44}{figure.caption.13}\protected@file@percent }
+\newlabel{Fig:toy-stoch}{{3.6}{44}{An emulator for a stochastic simulator. Solid blue line is simulator mean with blue dashed lines being $95\%$ probability bands. Solid black line is emulator mean, dashed black lines are a $95\%$ probability interval for $y(x)$ and the red band is a $95\%$ probability interval for $f(x)$.\relax }{figure.caption.13}{}}
+\newlabel{Fig:toy-stoch@cref}{{[figure][6][3]3.6}{[1][43][]44}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Design of computer experiments}{44}{section.3.3}\protected@file@percent }
+\citation{Mckay1979,Morris1995}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}One-shot designs}{45}{subsection.3.3.1}\protected@file@percent }
+\citation{Seo2000}
+\citation{Nguyen2022}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces A $2$d random sample (left) and $2$d LH sample (right), both of size $n = 8$. In the left hand plot the dashed line corresponds to unit diagonal. In the right hand plot, the dashed lines correspond to an $8 \times 8$ grid of equally sized sub-cubes.\relax }}{46}{figure.caption.14}\protected@file@percent }
+\newlabel{Fig:rand-lh}{{3.7}{46}{A $2$d random sample (left) and $2$d LH sample (right), both of size $n = 8$. In the left hand plot the dashed line corresponds to unit diagonal. In the right hand plot, the dashed lines correspond to an $8 \times 8$ grid of equally sized sub-cubes.\relax }{figure.caption.14}{}}
+\newlabel{Fig:rand-lh@cref}{{[figure][7][3]3.7}{[1][45][]46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Sequential designs}{46}{subsection.3.3.2}\protected@file@percent }
+\citation{Gramacy2020surrogates}
+\citation{Pronzato2020}
+\citation{Kennedy2000}
+\citation{Forrester2007}
+\citation{Stein1991}
+\newlabel{Eq:std-alm}{{3.28}{47}{Sequential designs}{equation.3.3.28}{}}
+\newlabel{Eq:std-alm@cref}{{[equation][28][3]3.28}{[1][47][]47}}
+\newlabel{Eq:imspe}{{3.29}{47}{Sequential designs}{equation.3.3.29}{}}
+\newlabel{Eq:imspe@cref}{{[equation][29][3]3.29}{[1][47][]47}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Model fidelity}{47}{section.3.4}\protected@file@percent }
+\citation{Yates1987,Ashraf1997,Lark2007,Adhikary2017}
+\citation{Kennedy2000}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Autoregressive models}{48}{subsection.3.4.1}\protected@file@percent }
+\citation{Kennedy2000}
+\citation{Teymur2021}
+\@writefile{toc}{\contentsline {subsubsection}{A tractable example}{50}{equation.3.4.37}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Solutions to $f_R(x;T)$ at different fidelity levels. Approximate solutions are given by dashed lines, the analytic solution is given by the solid line. $T$ corresponds to the number of evaluations of $g(t;x)$ in the Riemann integration.\relax }}{51}{figure.caption.15}\protected@file@percent }
+\newlabel{Fig:fidelity}{{3.8}{51}{Solutions to $f_R(x;T)$ at different fidelity levels. Approximate solutions are given by dashed lines, the analytic solution is given by the solid line. $T$ corresponds to the number of evaluations of $g(t;x)$ in the Riemann integration.\relax }{figure.caption.15}{}}
+\newlabel{Fig:fidelity@cref}{{[figure][8][3]3.8}{[1][50][]51}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Emulator comparison}{51}{section.3.5}\protected@file@percent }
+\citation{Gneiting2007}
+\citation{Binois2018,Jackson2019}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces A standard GP emulator (left) and corresponding multilevel emulator (right). Here, the `truth' refers to $f_R(x;40)$, the object of inference, rather than the analytic solution.\relax }}{52}{figure.caption.16}\protected@file@percent }
+\newlabel{Fig:compare-ml}{{3.9}{52}{A standard GP emulator (left) and corresponding multilevel emulator (right). Here, the `truth' refers to $f_R(x;40)$, the object of inference, rather than the analytic solution.\relax }{figure.caption.16}{}}
+\newlabel{Fig:compare-ml@cref}{{[figure][9][3]3.9}{[1][50][]52}}
+\newlabel{Eq:rmse}{{3.40}{52}{Emulator comparison}{equation.3.5.40}{}}
+\newlabel{Eq:rmse@cref}{{[equation][40][3]3.40}{[1][51][]52}}
+\newlabel{Eq:scoring-rule}{{3.41}{52}{Emulator comparison}{equation.3.5.41}{}}
+\newlabel{Eq:scoring-rule@cref}{{[equation][41][3]3.41}{[1][52][]52}}
+\citation{Challenor2013}
+\citation{Bastos09}
+\citation{Baker2019a}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Performance metrics for two the standard and multilevel emulators in \Cref  {Fig:compare-ml}.\relax }}{53}{table.caption.17}\protected@file@percent }
+\newlabel{Tab:toy-ml-metric}{{3.1}{53}{Performance metrics for two the standard and multilevel emulators in \Cref {Fig:compare-ml}.\relax }{table.caption.17}{}}
+\newlabel{Tab:toy-ml-metric@cref}{{[table][1][3]3.1}{[1][53][]53}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Emulator diagnostics}{53}{section.3.6}\protected@file@percent }
+\citation{Overstall2016}
+\citation{Volodina2020,Vernon2022tense}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}The diagnostics}{54}{subsection.3.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}Example}{54}{subsection.3.6.2}\protected@file@percent }
+\citation{Wilson2018}
+\citation{Marrel2012,Tripathy2018,Barton2006}
+\citation{Rougier2009}
+\citation{Baggaley2012}
+\citation{Salter2016}
+\citation{Gramacy12}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Other surrogate models}{55}{section.3.7}\protected@file@percent }
+\citation{Jones2016,Wilson18,Bower2010,Vernon2019,Jackson2023}
+\citation{BLS07}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}Linear models}{56}{subsection.3.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}Bayes linear emulators}{56}{subsection.3.7.2}\protected@file@percent }
+\citation{Pukelsheim1994}
+\citation{Owen2020}
+\newlabel{Eq:bl-mean}{{3.45}{57}{Bayes linear emulators}{equation.3.7.45}{}}
+\newlabel{Eq:bl-mean@cref}{{[equation][45][3]3.45}{[1][57][]57}}
+\newlabel{Eq:bl-var}{{3.46}{57}{Bayes linear emulators}{equation.3.7.46}{}}
+\newlabel{Eq:bl-var@cref}{{[equation][46][3]3.46}{[1][57][]57}}
+\citation{Bower2010,Vernon2019}
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}Summary}{58}{section.3.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagnostic Plots for the toy emulator. Top two plots are C.E.s against the inputs (left is input $1$, right is input $2$). Bottom right shows a QQ plot with the unit diagonal superimposed. Bottom left is the coverage plot, black points correspond to observed C.E.s, translucent red dots correspond to the coverage observed from $100$ iid $\mathcal  {N}(0,1)$ samples of size $20$.\relax }}{60}{figure.caption.18}\protected@file@percent }
+\newlabel{Fig:diags}{{3.10}{60}{Diagnostic Plots for the toy emulator. Top two plots are C.E.s against the inputs (left is input $1$, right is input $2$). Bottom right shows a QQ plot with the unit diagonal superimposed. Bottom left is the coverage plot, black points correspond to observed C.E.s, translucent red dots correspond to the coverage observed from $100$ iid $\mathcal {N}(0,1)$ samples of size $20$.\relax }{figure.caption.18}{}}
+\newlabel{Fig:diags@cref}{{[figure][10][3]3.10}{[1][54][]60}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagnostic Plots for the toy emulator. Top two plots are C.E.s against the inputs (left is input $1$, right is input $2$). Bottom right shows a QQ plot with the unit diagonal superimposed. Bottom left is the coverage plot, black points correspond to observed C.E.s, translucent red dots correspond to the coverage observed from $100$ iid $\mathcal  {N}(0,1)$ samples of size $20$.\relax }}{61}{figure.caption.19}\protected@file@percent }
+\newlabel{Fig:diag2}{{3.11}{61}{Diagnostic Plots for the toy emulator. Top two plots are C.E.s against the inputs (left is input $1$, right is input $2$). Bottom right shows a QQ plot with the unit diagonal superimposed. Bottom left is the coverage plot, black points correspond to observed C.E.s, translucent red dots correspond to the coverage observed from $100$ iid $\mathcal {N}(0,1)$ samples of size $20$.\relax }{figure.caption.19}{}}
+\newlabel{Fig:diag2@cref}{{[figure][11][3]3.11}{[1][54][]61}}
+\@setckpt{chapters/emulators}{
+\setcounter{page}{62}
+\setcounter{equation}{47}
+\setcounter{enumi}{5}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{8}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{11}
+\setcounter{table}{1}
+\setcounter{NAT@ctr}{0}
+\setcounter{parentequation}{0}
+\setcounter{caption@flags}{0}
+\setcounter{continuedfloat}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{r@tfl@t}{0}
+\setcounter{Item}{8}
+\setcounter{Hfootnote}{1}
+\setcounter{bookmark@seq@number}{43}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{float@type}{8}
+\setcounter{algorithm}{0}
+\setcounter{ALG@line}{0}
+\setcounter{ALG@rem}{0}
+\setcounter{ALG@nested}{0}
+\setcounter{ALG@Lnr}{2}
+\setcounter{ALG@blocknr}{10}
+\setcounter{ALG@storecount}{0}
+\setcounter{ALG@tmpcounter}{0}
+\setcounter{theorem}{0}
+\setcounter{lemma}{0}
+\setcounter{corollary}{0}
+\setcounter{proposition}{0}
+\setcounter{section@level}{0}
+}

@@ -1,0 +1,3117 @@
+MASTER REFERENCES DOCUMENT
+THIS HAS **ALL** MY REFERENCES IN
+
+This is an example of a BibTeX references file.  Any reference you'll ever need
+can go in this one file.  In your thesis/paper you just need to say
+
+\bibliography{references}	%References
+\bibliographystyle{style_file}	%BibTeX (.bst) style file
+
+which will automatically include any references you mention in your thesis.
+Any references you don't make are not included.  If you want to include a
+reference you don't mention just use
+
+\nocite{label}
+
+which will insert the reference 'label' into your bibliography.  I like the
+style file (jfm.bst) provided by the Journal of Fluid Mechanics.  You can
+download it from their website (http://jfm-www.damtp.cam.ac.uk/).
+-------------------------------------------------------------------------------
+@article{Kennedy2023,
+    author = {Kennedy, Jack C and Henderson, Daniel A and Wilson, Kevin J},
+    title = "{Multilevel emulation for stochastic computer models with application to large offshore wind farms}",
+    journal = {Journal of the Royal Statistical Society Series C: Applied Statistics},
+    year = {2023},
+    month = {03},
+    abstract = "{Renewable energy projects, such as large offshore wind farms, are critical to achieving low-emission targets set by governments. Stochastic computer models allow us to explore future scenarios to aid decision making while considering the most relevant uncertainties. Complex stochastic computer models can be prohibitively slow, and thus an emulator may be constructed and deployed to allow for efficient computation. We present a novel heteroscedastic Gaussian Process emulator that exploits cheap approximations to a stochastic offshore wind farm simulator. We also conduct a probabilistic sensitivity analysis to understand the influence of key parameters in the wind farm model, which will help us to plan a probability elicitation in the future.}",
+    issn = {0035-9254},
+    doi = {10.1093/jrsssc/qlad023},
+    url = {https://doi.org/10.1093/jrsssc/qlad023},
+    eprint = {https://academic.oup.com/jrsssc/advance-article-pdf/doi/10.1093/jrsssc/qlad023/49585830/qlad023.pdf},
+}
+
+@article{Solin2020,
+  title={Hilbert space methods for reduced-rank Gaussian process regression},
+  author={Solin, Arno and S{\"a}rkk{\"a}, Simo},
+  journal={Statistics and Computing},
+  volume={30},
+  number={2},
+  pages={419--446},
+  year={2020},
+  publisher={Springer}
+}
+
+
+@article{Riutort2023,
+  title={Practical Hilbert space approximate Bayesian Gaussian processes for probabilistic programming},
+  author={Riutort-Mayol, Gabriel and B{\"u}rkner, Paul-Christian and Andersen, Michael R and Solin, Arno and Vehtari, Aki},
+  journal={Statistics and Computing},
+  volume={33},
+  number={1},
+  pages={17},
+  year={2023},
+  publisher={Springer}
+}
+
+@InProceedings{Wilson2015,
+  title = 	 {Kernel Interpolation for Scalable Structured Gaussian Processes (KISS-GP)},
+  author = 	 {Wilson, Andrew and Nickisch, Hannes},
+  booktitle = 	 {Proceedings of the 32nd International Conference on Machine Learning},
+  pages = 	 {1775--1784},
+  year = 	 {2015},
+  editor = 	 {Bach, Francis and Blei, David},
+  volume = 	 {37},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Lille, France},
+  month = 	 {07--09 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v37/wilson15.pdf},
+  url = 	 {https://proceedings.mlr.press/v37/wilson15.html},
+  abstract = 	 {We introduce a new structured kernel interpolation (SKI) framework, which generalises and unifies inducing point methods for scalable Gaussian processes (GPs). SKI methods produce kernel approximations for fast computations through kernel interpolation. The SKI framework clarifies how the quality of an inducing point approach depends on the number of inducing (aka interpolation) points, interpolation strategy, and GP covariance kernel. SKI also provides a mechanism to create new scalable kernel methods, through choosing different kernel interpolation strategies. Using SKI, with local cubic kernel interpolation, we introduce KISS-GP, which is 1) more scalable than inducing point alternatives, 2) naturally enables Kronecker and Toeplitz algebra for substantial additional gains in scalability, without requiring any grid data, and 3) can be used for fast and expressive kernel learning. KISS-GP costs O(n) time and storage for GP inference. We evaluate KISS-GP for kernel matrix approximation, kernel learning, and natural sound modelling.}
+}
+
+
+
+@InProceedings{Rainforth2018,
+  title = 	 {On Nesting {M}onte {C}arlo Estimators},
+  author =       {Rainforth, Tom and Cornish, Rob and Yang, Hongseok and Warrington, Andrew and Wood, Frank},
+  booktitle = 	 {Proceedings of the 35th International Conference on Machine Learning},
+  pages = 	 {4267--4276},
+  year = 	 {2018},
+  editor = 	 {Dy, Jennifer and Krause, Andreas},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {10--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/rainforth18a/rainforth18a.pdf},
+  url = 	 {https://proceedings.mlr.press/v80/rainforth18a.html},
+  abstract = 	 {Many problems in machine learning and statistics involve nested expectations and thus do not permit conventional Monte Carlo (MC) estimation. For such problems, one must nest estimators, such that terms in an outer estimator themselves involve calculation of a separate, nested, estimation. We investigate the statistical implications of nesting MC estimators, including cases of multiple levels of nesting, and establish the conditions under which they converge. We derive corresponding rates of convergence and provide empirical evidence that these rates are observed in practice. We further establish a number of pitfalls that can arise from naive nesting of MC estimators, provide guidelines about how these can be avoided, and lay out novel methods for reformulating certain classes of nested expectation problems into single expectations, leading to improved convergence rates. We demonstrate the applicability of our work by using our results to develop a new estimator for discrete Bayesian experimental design problems and derive error bounds for a class of variational objectives.}
+}
+
+
+@article{Pronzato2020,
+author = {Pronzato, Luc and Zhigljavsky, Anatoly},
+title = {Bayesian Quadrature, Energy Minimization, and Space-Filling Design},
+journal = {SIAM/ASA Journal on Uncertainty Quantification},
+volume = {8},
+number = {3},
+pages = {959-1011},
+year = {2020},
+doi = {10.1137/18M1210332},
+
+URL = {https://doi.org/10.1137/18M1210332},
+eprint = {https://doi.org/10.1137/18M1210332}
+,
+    abstract = { A standard objective in computer experiments is to approximate the behavior of an unknown function on a compact domain from a few evaluations inside the domain. When little is known about the function, space-filling design is advisable: typically, points of evaluation spread out across the available space are obtained by minimizing a geometrical (for instance, covering radius) or a discrepancy criterion measuring distance to uniformity. The paper investigates connections between design for integration (quadrature design), construction of the (continuous) best linear unbiased estimator (BLUE) for the location model, space-filling design, and minimization of energy (kernel discrepancy) for signed measures. Integrally strictly positive definite kernels define strictly convex energy functionals, with an equivalence between the notions of potential and directional derivative, showing the strong relation between discrepancy minimization and more traditional design of optimal experiments. In particular, kernel herding algorithms, which are special instances of vertex-direction methods used in optimal design, can be applied to the construction of point sequences with suitable space-filling properties. }
+}
+
+
+
+@inproceedings{Teymur2021,
+ author = {Teymur, Onur and Foley, Christopher and Breen, Philip and Karvonen, Toni and Oates, Chris J},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+ pages = {23452--23464},
+ publisher = {Curran Associates, Inc.},
+ title = {Black Box Probabilistic Numerics},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/c4de8ced6214345614d33fb0b16a8acd-Paper.pdf},
+ volume = {34},
+ year = {2021}
+}
+
+@article{Nguyen2022,
+  title={How to measure uncertainty in uncertainty sampling for active learning},
+  author={Nguyen, Vu-Linh and Shaker, Mohammad Hossein and H{\"u}llermeier, Eyke},
+  journal={Machine Learning},
+  volume={111},
+  number={1},
+  pages={89--122},
+  year={2022},
+  publisher={Springer}
+}
+
+
+@article{Kennedy2020,
+  title={Multilevel Emulation for Stochastic Computer Models with an Application to Large Offshore Wind farms},
+  author={Kennedy, Jack C and Henderson, Daniel A and Wilson, Kevin J},
+  journal={arXiv preprint arXiv:2003.08921},
+  year={2020}
+}
+
+@article{Ling2014,
+  title={Selection of model discrepancy priors in {B}ayesian calibration},
+  author={Ling, You and Mullins, Joshua and Mahadevan, Sankaran},
+  journal={Journal of Computational Physics},
+  volume={276},
+  pages={665--680},
+  year={2014},
+  publisher={Elsevier}
+}
+
+
+@incollection{Keller2009,
+  title={Multiple-objective decision analysis involving multiple stakeholders},
+  author={Keller, L Robin and Simon, Jay and Wang, Yitong},
+  booktitle={Decision Technologies and Applications},
+  pages={139--155},
+  year={2009},
+  publisher={Informs}
+}
+
+
+
+@article{Rowe1999,
+  title={The {D}elphi technique as a forecasting tool: issues and analysis},
+  author={Rowe, Gene and Wright, George},
+  journal={International Journal of Forecasting},
+  volume={15},
+  number={4},
+  pages={353--375},
+  year={1999},
+  publisher={Elsevier}
+}
+
+
+@article{Tracht2013,
+  title={Spare parts planning for offshore wind turbines subject to restrictive maintenance conditions},
+  author={Tracht, Kirsten and Westerholt, Jan and Schuh, Peter},
+  journal={Procedia Cirp},
+  volume={7},
+  pages={563--568},
+  year={2013},
+  publisher={Elsevier}
+}
+@article{Costello1971,
+  title={On the number of points in regular discrete simplex (Corresp.)},
+  author={Costello, J},
+  journal={IEEE Transactions on Information Theory},
+  volume={17},
+  number={2},
+  pages={211--212},
+  year={1971},
+  publisher={IEEE}
+}
+
+@article{Diessner2022,
+  title={On the development of a {B}ayesian optimisation framework for complex unknown systems},
+  author={Diessner, Mike and Guan, Yu and Wilson, Kevin J and Whalley, Richard D},
+  journal={arXiv preprint arXiv:2207.09154},
+  year={2022}
+}
+
+
+@article{Tusar2022,
+  title={Spare parts control strategies for offshore wind farms: a critical review and comparative study},
+  author={Tusar, Md Imran Hasan and Sarker, Bhaba R},
+  journal={Wind Engineering},
+  volume = {46},
+  number = {5},
+  pages = {1629-1656},
+  year={2022},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+
+@article{Stein1987,
+  title={Large sample properties of simulations using {L}atin hypercube sampling},
+  author={Stein, Michael},
+  journal={Technometrics},
+  volume={29},
+  number={2},
+  pages={143--151},
+  year={1987},
+  publisher={Taylor \& Francis}
+}
+@inproceedings{Wu2017,
+ author = {Wu, Jian and Poloczek, Matthias and Wilson, Andrew G and Frazier, Peter},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ publisher = {Curran Associates, Inc.},
+ title = {Bayesian Optimization with Gradients},
+ url = {https://proceedings.neurips.cc/paper/2017/file/64a08e5f1e6c39faeb90108c430eb120-Paper.pdf},
+ volume = {30},
+ pages = {1--12},
+ year = {2017}
+}
+
+@article{Swallow2022,
+  title={Challenges in estimation, uncertainty quantification and elicitation for pandemic modelling},
+  author={Swallow, Ben and Birrell, Paul and Blake, Joshua and Burgman, Mark and Challenor, Peter and Coffeng, Luc E and Dawid, Philip and De Angelis, Daniela and Goldstein, Michael and Hemming, Victoria and others},
+  journal={Epidemics},
+  volume={38},
+  pages={100547},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@article{Kan1989,
+  title={{Chapter IX Global optimization}},
+  author={Kan, AHG Rinnooy and Timmer, GT},
+  journal={Handbooks in Operations Research and Management Science},
+  volume={1},
+  pages={631--662},
+  year={1989},
+  publisher={Elsevier}
+}
+
+
+@book{Rhinehart2018,
+language = {eng},
+author = {Rhinehart, R. Russell},
+keywords = {Mathematical models -- Engineering (General) -- Reference; Electronic books},
+lccn = {2017058922},
+abstract = {Optimization is an inherent human tendency that gained new life after the advent of calculus; now, as the world grows increasingly reliant on complex systems, optimization has become both more important and more challenging than ever before. Engineering Optimization provides a practically-focused introduction to modern engineering optimization best practices, covering fundamental analytical and numerical techniques throughout each stage of the optimization process. Although essential algorithms are explained in detail, the focus lies more in the human function: how to create an appropriate objective function, choose decision variables, identify and incorporate constraints, define convergence, and other critical issues that define the success or failure of an optimization project. Examples, exercises, and homework throughout reinforce the author’s “do, not study” approach to learning, underscoring the application-oriented discussion that provides a deep, generic understanding of the optimization process that can be applied to any field. Providing excellent reference for students or professionals, Engineering Optimization: Describes and develops a variety of algorithms, including gradient based (such as Newton’s, and Levenberg-Marquardt), direct search (such as Hooke-Jeeves, Leapfrogging, and Particle Swarm), along with surrogate functions for surface characterization Provides guidance on optimizer choice by application, and explains how to determine appropriate optimizer parameter values Details current best practices for critical stages of specifying an optimization procedure, including decision variables, defining constraints, and relationship modeling Provides access to software and Visual Basic macros for Excel on the companion website, along with solutions to examples presented in the book Clear explanations, explicit equation derivations, and practical examples make this book ideal for use as part of a class or self-study, assuming a basic understanding of statistics, calculus, computer programming, and engineering models. Anyone seeking best practices for “making the best choices” will find value in this introductory resource.},
+isbn = {9781118936320},
+year = {2018},
+title = {Engineering optimization : applications, methods and analysis},
+}
+
+@article{Criqui2012,
+  title={European climate—energy security nexus: A model based scenario analysis},
+  author={Criqui, Patrick and Mima, Silvana},
+  journal={Energy Policy},
+  volume={41},
+  pages={827--842},
+  year={2012},
+  publisher={Elsevier}
+}
+@article{Khalid2016,
+  title={Application on one-at-a-time sensitivity analysis of semi-distributed hydrological model in tropical watershed},
+  author={Khalid, K and Ali, MF and Abd Rahman, NF and Mispan, MR},
+  journal={International Journal of Engineering and Technology},
+  volume={8},
+  number={2},
+  pages={132--136},
+  year={2016},
+  publisher={IACSIT Press}
+}
+@article{Amzal2006,
+  title={Bayesian-optimal design via interacting particle systems},
+  author={Amzal, Billy and Bois, Fr{\'e}d{\'e}ric Y and Parent, Eric and Robert, Christian P},
+  journal={Journal of the American Statistical association},
+  volume={101},
+  number={474},
+  pages={773--785},
+  year={2006},
+  publisher={Taylor \& Francis}
+}
+
+@inproceedings{Saraiva2017,
+  title={Calculation of sensitivity index using one-at-a-time measures based on graphical analysis},
+  author={Saraiva, Julyana P and Lima, Beatriz S and Gomes, Viviane M and Flores, Paulo HR and Gomes, Fl{\'a}vio A and Assis, Alfredo O and Reis, M{\'a}rcio RC and Ara{\'u}jo, Wanderson RH and Abrenhosa, Calebe and Calixto, Wesley P},
+  booktitle={2017 18th International Scientific Conference on Electric Power Engineering (EPE)},
+  pages={1--6},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{Samso2020,
+  title={Scenario analysis and sensitivity exploration of the {MEDEAS Europe} energy-economy-environment model},
+  author={Sams{\'o}, Roger and de Blas, Ignacio and Perissi, Ilaria and Martelloni, Gianluca and Sol{\'e}, Jordi},
+  journal={Energy Strategy Reviews},
+  volume={32},
+  pages={100582},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{Ohagan2019,
+  title={Expert knowledge elicitation: subjective but scientific},
+  author={O'Hagan, Anthony},
+  journal={The American Statistician},
+  volume={73},
+  number={sup1},
+  pages={69--81},
+  year={2019},
+  publisher={Taylor \& Francis}
+}
+@article{Wheatcroft2019,
+  title={The scenario culture},
+  author={Wheatcroft, Edward and Wynn, Henry and Dent, Chris J and Smith, Jim Q and Copeland, Claire L and Ralph, Daniel and Zachary, Stan},
+  journal={arXiv preprint arXiv:1911.13170},
+  year={2019}
+}
+
+@article{Williams2021,
+  title={A comparison of prior elicitation aggregation using the classical method and {SHELF}},
+  author={Williams, Cameron J and Wilson, Kevin J and Wilson, Nina},
+  journal={Journal of the Royal Statistical Society: Series A (Statistics in Society)},
+  volume={184},
+  number={3},
+  pages={920--940},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+
+
+@article{Pedersen2020,
+  title={Emergency preparedness and response: Insights from the emerging offshore wind industry},
+  author={Pedersen, Soren and Ahsan, Dewan},
+  journal={Safety Science},
+  volume={121},
+  pages={516--528},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{Bailey2014,
+  title={Assessing environmental impacts of offshore wind farms: lessons learned and recommendations for the future},
+  author={Bailey, Helen and Brookes, Kate L and Thompson, Paul M},
+  journal={Aquatic Biosystems},
+  volume={10},
+  number={1},
+  pages={1--13},
+  year={2014},
+  publisher={BioMed Central}
+}
+
+
+@Manual{truncnorm,
+    title = {truncnorm: Truncated Normal Distribution},
+    author = {Olaf Mersmann and Heike Trautmann and Detlef Steuer and Björn Bornkamp},
+    year = {2018},
+    note = {R package version 1.0-8}
+  }
+  @article{Baker2019a,
+  title={Diagnostics for Stochastic {G}aussian Process Emulators},
+  author={Baker, Evan and Challenor, Peter and Eames, Matt},
+  journal={arXiv preprint arXiv:1902.01289},
+  year={2019}
+}
+@article{Volodina2020,
+  title={Diagnostics-driven nonstationary emulators using kernel mixtures},
+  author={Volodina, Victoria and Williamson, Daniel},
+  journal={SIAM/ASA Journal on Uncertainty Quantification},
+  volume={8},
+  number={1},
+  pages={1--26},
+  year={2020},
+  publisher={SIAM}
+}
+@article{Volodina2021,
+  title={The importance of uncertainty quantification in model reproducibility},
+  author={Volodina, Victoria and Challenor, Peter},
+  journal={Philosophical Transactions of the Royal Society A},
+  volume={379},
+  number={2197},
+  pages={20200071},
+  year={2021},
+  publisher={The Royal Society Publishing}
+}
+
+@article{Salter2016,
+  title={A comparison of statistical emulation methodologies for multi-wave calibration of environmental models},
+  author={Salter, James M and Williamson, Daniel},
+  journal={Environmetrics},
+  volume={27},
+  number={8},
+  pages={507--523},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+@ARTICLE{Baker2019,
+       author = {{Baker}, Evan and {Challenor}, Peter and {Eames}, Matt},
+        title = "{Predicting the Output From a Stochastic Computer Model When a Deterministic Approximation is Available}",
+      journal = {arXiv e-prints},
+     keywords = {Statistics - Methodology},
+         year = "2019",
+        month = "Feb",
+          eid = {arXiv:1902.01290},
+        pages = {arXiv:1902.01290},
+archivePrefix = {arXiv},
+       eprint = {1902.01290},
+ primaryClass = {stat.ME},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190201290B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Baker2022,
+  title={Analyzing stochastic computer models: A review with opportunities},
+  author={Baker, Evan and Barbillon, Pierre and Fadikar, Arindam and Gramacy, Robert B and Herbei, Radu and Higdon, David and Huang, Jiangeng and Johnson, Leah R and Ma, Pulong and Mondal, Anirban and others},
+  journal={Statistical Science},
+  volume={37},
+  number={1},
+  pages={64--89},
+  year={2022},
+  publisher={Institute of Mathematical Statistics}
+}
+
+
+@inproceedings{Nguyen2020,
+  title={Knowing the what but not the where in {B}ayesian optimization},
+  author={Nguyen, Vu and Osborne, Michael A},
+  booktitle={International Conference on Machine Learning},
+  pages={7317--7326},
+  year={2020},
+  organization={PMLR}
+}
+@article{Zhang2022,
+  title={Batch-sequential design and heteroskedastic surrogate modeling for delta smelt conservation},
+  author={Zhang, Boya and Gramacy, Robert B and Johnson, Leah R and Rose, Kenneth A and Smith, Eric},
+  journal={The Annals of Applied Statistics},
+  volume={16},
+  number={2},
+  pages={816--842},
+  year={2022},
+  publisher={Institute of Mathematical Statistics}
+}
+@Manual{LHSpkg,
+   title = {lhs: Latin Hypercube Samples},
+   author = {Rob Carnell},
+   year = {2022},
+   note = {R package version 1.1.5},
+   url = {https://CRAN.R-project.org/package=lhs},
+ }
+
+
+@inproceedings{Marmin2015,
+  title={Differentiating the multipoint expected improvement for optimal batch design},
+  author={Marmin, S{\'e}bastien and Chevalier, Cl{\'e}ment and Ginsbourger, David},
+  booktitle={International Workshop on Machine Learning, Optimization and Big Data},
+  pages={37--48},
+  year={2015},
+  organization={Springer}
+}
+@article{bernardo2011optimization,
+  title={Optimization under unknown constraints},
+  author = {Gramacy, Robert B and Lee, Herbert K. H},
+  journal={Bayesian Statistics},
+  volume={9},
+  number={9},
+  pages={229},
+  year={2011}
+}
+
+@inproceedings{Chan2011,
+  title={Generalized Gaussian process models.},
+  author={Chan, Antoni B and Dong, Daxiang},
+  booktitle={CVPR},
+  pages={2681--2688},
+  year={2011}
+}
+
+
+@article{Binois2019,
+author = {Mickaël Binois and Jiangeng Huang and Robert B. Gramacy and Mike Ludkovski},
+title = {Replication or Exploration? Sequential Design for Stochastic Simulation Experiments},
+journal = {Technometrics},
+volume = {61},
+number = {1},
+pages = {7-23},
+year  = {2019},
+publisher = {Taylor & Francis},
+doi = {10.1080/00401706.2018.1469433},
+
+eprint = {
+        https://doi.org/10.1080/00401706.2018.1469433
+
+}
+
+}
+@article{Elfadaly2017,
+author="Elfadaly, Fadlalla G.
+and Garthwaite, Paul H.",
+title="Eliciting {D}irichlet and {G}aussian copula prior distributions for multinomial models",
+journal="Statistics and Computing",
+year="2017",
+month="Mar",
+day="01",
+volume="27",
+number="2",
+pages="449--467",
+abstract="In this paper, we propose novel methods of quantifying expert opinion about prior distributions for multinomial models. Two different multivariate priors are elicited using median and quartile assessments of the multinomial probabilities. First, we start by eliciting a univariate beta distribution for the probability of each category. Then we elicit the hyperparameters of the Dirichlet distribution, as a tractable conjugate prior, from those of the univariate betas through various forms of reconciliation using least-squares techniques. However, a multivariate copula function will give a more flexible correlation structure between multinomial parameters if it is used as their multivariate prior distribution. So, second, we use beta marginal distributions to construct a Gaussian copula as a multivariate normal distribution function that binds these marginals and expresses the dependence structure between them. The proposed method elicits a positive-definite correlation matrix of this Gaussian copula. The two proposed methods are designed to be used through interactive graphical software written in Java.",
+issn="1573-1375",
+doi="10.1007/s11222-016-9632-7",
+url="https://doi.org/10.1007/s11222-016-9632-7"
+}
+
+@article{Oakley2002,
+  title={Eliciting {G}aussian process priors for complex computer codes},
+  author={Oakley, Jeremy},
+  journal={Journal of the Royal Statistical Society: Series D (The Statistician)},
+  volume={51},
+  number={1},
+  pages={81--97},
+  year={2002},
+  publisher={Wiley Online Library}
+}
+
+@article{Tresidder2012,
+  title={Acceleration of building design optimisation through the use of {K}riging surrogate models},
+  author={Tresidder, Es and Zhang, Yi and Forrester, AI},
+  journal={Proceedings of Building Simulation and Optimization},
+  pages={1--8},
+  year={2012},
+  publisher={Citeseer}
+}
+
+@inproceedings{Astudillo2019,
+  title={Bayesian optimization of composite functions},
+  author={Astudillo, Raul and Frazier, Peter},
+  booktitle={International Conference on Machine Learning},
+  pages={354--363},
+  year={2019},
+  organization={PMLR}
+}
+@inproceedings{Astudillo2020,
+  title={Multi-attribute {B}ayesian optimization with interactive preference learning},
+  author={Astudillo, Raul and Frazier, Peter},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={4496--4507},
+  year={2020},
+  organization={PMLR}
+}
+
+@article{Kotidis2019,
+  title={Constrained global sensitivity analysis for bioprocess design space identification},
+  author={Kotidis, Pavlos and Demis, Panagiotis and Goey, Cher H and Correa, Elisa and McIntosh, Calum and Trepekli, Stefania and Shah, Nilay and Klymenko, Oleksiy V and Kontoravdi, Cleo},
+  journal={Computers \& Chemical Engineering},
+  volume={125},
+  pages={558--568},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{Kucherenko2017,
+  title={Sobol' indices for problems defined in non-rectangular domains},
+  author={Kucherenko, S and Klymenko, Oleksiy V and Shah, Nilay},
+  journal={Reliability Engineering \& System Safety},
+  volume={167},
+  pages={218--231},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@inproceedings{Mockus1975,
+  title={{On Bayesian methods for seeking the extremum}},
+  author={Mo{\v{c}}kus, Jonas},
+  booktitle={Optimization Techniques IFIP Technical Conference},
+  pages={400--404},
+  year={1975},
+  organization={Springer}
+}
+
+@incollection{Ovcenavsek2000,
+  title={The parallel Bayesian optimization algorithm},
+  author={O{\v{c}}en{\'a}{\v{s}}ek, Ji{\v{r}}{\'\i} and Schwarz, Josef},
+  booktitle={The State of the Art in Computational Intelligence},
+  pages={61--67},
+  year={2000},
+  publisher={Springer}
+}
+
+
+@ARTICLE{Zhang18,
+       author = {{Zhang}, Boya and {Cole}, D. Austin and {Gramacy}, Robert B.},
+        title = "{Distance-distributed design for {G}aussian process surrogates}",
+      journal = {arXiv e-prints},
+     keywords = {Statistics - Methodology},
+         year = "2018",
+        month = "Dec",
+          eid = {arXiv:1812.02794},
+        pages = {arXiv:1812.02794},
+archivePrefix = {arXiv},
+       eprint = {1812.02794},
+ primaryClass = {stat.ME},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2018arXiv181202794Z},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Harvey2018,
+issn = {Natural Hazards and Earth System Sciences},
+year = {2018},
+journal = {Natural Hazards and Earth System Sciences},
+pages = {41--63},
+volume = {18},
+number = {1},
+title = {Multi-level emulation of a volcanic ash transport and dispersion model to quantify sensitivity to uncertain parameters},
+language = {eng},
+author = {Harvey, Natalie J. and Huntley, Nathan and Dacre, Helen F. and Goldstein, Michael and Thomson, David and Webster, Helen},
+}
+
+@article{Gneiting2007,
+issn = {0162-1459},
+abstract = {<p>Scoring rules assess the quality of probabilistic forecasts, by assigning a numerical score based on the predictive distribution and on the event or value that materializes. A scoring rule is proper if the forecaster maximizes the expected score for an observation drawn from the distributionF if he or she issues the probabilistic forecast F, rather than G ≠ F. It is strictly proper if the maximum is unique. In prediction problems, proper scoring rules encourage the forecaster to make careful assessments and to be honest. In estimation problems, strictly proper scoring rules provide attractive loss and utility functions that can be tailored to the problem at hand. This article reviews and develops the theory of proper scoring rules on general probability spaces, and proposes and discusses examples thereof. Proper scoring rules derive from convex functions and relate to information measures, entropy functions, and Bregman divergences. In the case of categorical variables, we prove a rigorous version of the Savage representation. Examples of scoring rules for probabilistic forecasts in the form of predictive densities include the logarithmic, spherical, pseudospherical, and quadratic scores. The continuous ranked probability score applies to probabilistic forecasts that take the form of predictive cumulative distribution functions. It generalizes the absolute error and forms a special case of a new and very general type of score, the energy score. Like many other scoring rules, the energy score admits a kernel representation in terms of negative definite functions, with links to inequalities of Hoeffding type, in both univariate and multivariate settings. Proper scoring rules for quantile and interval forecasts are also discussed. We relate proper scoring rules to Bayes factors and to cross-validation, and propose a novel form of cross-validation known as random-fold cross-validation. A case study on probabilistic weather forecasts in the North American Pacific Northwest illustrates the importance of propriety. We note optimum score approaches to point and quantile estimation, and propose the intuitively appealing interval score as a utility function in interval estimation that addresses width as well as coverage.</p>},
+journal = {Journal of the American Statistical Association},
+pages = {359--378},
+volume = {102},
+publisher = {Taylor & Francis},
+number = {477},
+year = {2007},
+title = {Strictly Proper Scoring Rules, Prediction, and Estimation},
+language = {eng},
+author = {Gneiting, Tilmann and Raftery, Adrian E},
+keywords = {Bayes Factor ; Bregman Divergence ; Brier Score ; Coherent ; Continuous Ranked Probability Score ; Cross-Validation ; Entropy ; Kernel Score ; Loss Function ; Minimum Contrast Estimation ; Negative Definite Function ; Prediction Interval ; Predictive Distribution ; Quantile Forecast ; Scoring Rule ; Skill Score ; Strictly Proper ; Utility Function ; Statistics}
+}
+
+
+
+@article{Gosling19,
+title = "The importance of mathematical modelling in chemical risk assessment and the associated quantification of uncertainty",
+journal = "Computational Toxicology",
+volume = "10",
+pages = "44 - 50",
+year = "2019",
+issn = "2468-1113",
+doi = "https://doi.org/10.1016/j.comtox.2018.12.004",
+url = "http://www.sciencedirect.com/science/article/pii/S2468111318301002",
+author = "John Paul Gosling",
+keywords = " predictions, Mathematical modelling, Next generation risk assessment, Uncertainty",
+abstract = "Computational models pervade modern toxicology and are becoming an accepted part of chemical risk assessments. Mathematical and statistical tools are versatile enough to capture information from wide arrays of existing data and from our mechanistic understanding of human biology and chemical reactions. They are more accessible than ever given the number of readily available guidance documents and software packages. In the present article, we will highlight the utility of modelling for next generation risk assessments whilst emphasising the importance of characterising and reporting uncertainty. The concepts herein are the foundations for a paradigm shift in toxicology where transparency about scientific understanding replaces faith in animal models."
+}
+
+@article{Oakley04,
+author = {Oakley, Jeremy E. and O'Hagan, Anthony},
+title = {{Probabilistic sensitivity analysis of complex models: a Bayesian approach}},
+journal = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+volume = {66},
+number = {3},
+pages = {751-769},
+keywords = {Bayesian inference, Computer model, Gaussian process, Sensitivity analysis, Uncertainty analysis},
+doi = {10.1111/j.1467-9868.2004.05304.x},
+eprint = {https://rss.onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9868.2004.05304.x},
+abstract = {Summary.  In many areas of science and technology, mathematical models are built to simulate complex real world phenomena. Such models are typically implemented in large computer programs and are also very complex, such that the way that the model responds to changes in its inputs is not transparent. Sensitivity analysis is concerned with understanding how changes in the model inputs influence the outputs. This may be motivated simply by a wish to understand the implications of a complex model but often arises because there is uncertainty about the true values of the inputs that should be used for a particular application. A broad range of measures have been advocated in the literature to quantify and describe the sensitivity of a model's output to variation in its inputs. In practice the most commonly used measures are those that are based on formulating uncertainty in the model inputs by a joint probability distribution and then analysing the induced uncertainty in outputs, an approach which is known as probabilistic sensitivity analysis. We present a Bayesian framework which unifies the various tools of prob- abilistic sensitivity analysis. The Bayesian approach is computationally highly efficient. It allows effective sensitivity analysis to be achieved by using far smaller numbers of model runs than standard Monte Carlo methods. Furthermore, all measures of interest may be computed from a single set of runs.},
+year = {2004}
+}
+
+@article{Holvoet2005,
+  title={Sensitivity analysis for hydrology and pesticide supply towards the river in SWAT},
+  author={Holvoet, Katrijn and van Griensven, Ann and Seuntjens, P and Vanrolleghem, PA},
+  journal={Physics and Chemistry of the Earth, Parts A/B/C},
+  volume={30},
+  number={8-10},
+  pages={518--526},
+  year={2005},
+  publisher={Elsevier}
+}
+
+@article{Shahriari2015,
+  title={{Taking the human out of the loop: A review of Bayesian optimization}},
+  author={Shahriari, Bobak and Swersky, Kevin and Wang, Ziyu and Adams, Ryan P and De Freitas, Nando},
+  journal={Proceedings of the IEEE},
+  volume={104},
+  number={1},
+  pages={148--175},
+  year={2015},
+  publisher={IEEE}
+}
+
+@inproceedings{Swersky2013,
+ author = {Swersky, Kevin and Snoek, Jasper and Adams, Ryan P},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C.J. Burges and L. Bottou and M. Welling and Z. Ghahramani and K.Q. Weinberger},
+ pages = {1-9},
+ publisher = {Curran Associates, Inc.},
+ title = {Multi-Task {B}ayesian Optimization},
+ url = {https://proceedings.neurips.cc/paper/2013/file/f33ba15effa5c10e873bf3842afb46a6-Paper.pdf},
+ volume = {26},
+ year = {2013}
+}
+
+
+@article{Oakley2009,
+  title={Decision-theoretic sensitivity analysis for complex computer models},
+  author={Oakley, Jeremy E},
+  journal={Technometrics},
+  volume={51},
+  number={2},
+  pages={121--129},
+  year={2009},
+  publisher={Taylor \& Francis}
+}
+@article{Svalova2021,
+  title={Emulating computer experiments of transport infrastructure slope stability using {G}aussian processes and {B}ayesian inference},
+  author={Svalova, Aleksandra and Helm, Peter and Prangle, Dennis and Rouainia, Mohamed and Glendinning, Stephanie and Wilkinson, Darren J},
+  journal={Data-Centric Engineering},
+  volume={2},
+  year={2021},
+  publisher={Cambridge University Press}
+}
+
+@inproceedings{Kandasamy2018,
+  title={{Parallelised Bayesian optimisation via Thompson sampling}},
+  author={Kandasamy, Kirthevasan and Krishnamurthy, Akshay and Schneider, Jeff and P{\'o}czos, Barnab{\'a}s},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={133--142},
+  year={2018},
+  organization={PMLR}
+}
+
+
+@article{Binois2018,
+  title={Practical heteroscedastic {G}aussian process modeling for large simulation experiments},
+  author={Binois, Mickael and Gramacy, Robert B and Ludkovski, Mike},
+  journal={Journal of Computational and Graphical Statistics},
+  volume={27},
+  number={4},
+  pages={808--821},
+  year={2018},
+  publisher={Taylor \& Francis}
+}
+
+
+@book{Cohen2016,
+series = {Synthesis digital library of engineering and computer science},
+abstract = {Natural language processing (NLP) went through a profound transformation in the mid-1980s when it shifted to make heavy use of corpora and data-driven techniques to analyze language. Since then, the use of statistical techniques in NLP has evolved in several ways. One such example of evolution took place in the late 1990s or early 2000s, when full-fledged Bayesian machinery was introduced to NLP. This Bayesian approach to NLP has come to accommodate for various shortcomings in the frequentist approach and to enrich it, especially in the unsupervised setting, where statistical learning is done without target prediction examples. We cover the methods and algorithms that are needed to fluently read Bayesian learning papers in NLP and to do research in the area. These methods and algorithms are partially borrowed from both machine learning and statistics and are partially developed "in-house" in NLP. We cover inference techniques such as Markov chain Monte Carlo sampling and variational inference, Bayesian estimation, and nonparametric modeling. We also cover fundamental concepts in Bayesian statistics such as prior distributions, conjugacy, and generative modeling. Finally, we cover some of the fundamental modeling techniques in NLP, such as grammar modeling and their use with Bayesian analysis.},
+isbn = {9781627054218},
+year = {2016},
+publisher = {Morgan `I\&' Claypool},
+title = {Bayesian analysis in natural language processing},
+language = {eng},
+author = {Cohen, Shay},
+keywords = {natural language processing; computational linguistics; Bayesian statistics; Bayesian NLP; statistical learning; inference in NLP; grammar modeling in NLP}
+}
+
+  @Manual{hetGP,
+    title = {hetGP: Heteroskedastic {G}aussian Process Modeling and Design under
+Replication},
+    author = {Mickael Binois and Robert B. Gramacy},
+    year = {2019},
+    note = {R package version 1.1.1}
+  }
+
+
+@Manual{R,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2019},
+    url = {https://www.R-project.org/},
+  }
+
+
+@article{Gratiet2015,
+author = { Le Gratiet, Loic and  Cannamela, Claire},
+title = {Cokriging-Based Sequential Design Strategies Using Fast Cross-Validation Techniques for Multi-Fidelity Computer Codes},
+journal = {Technometrics},
+volume = {57},
+number = {3},
+pages = {418-427},
+year  = {2015},
+publisher = {Taylor & Francis},
+doi = {10.1080/00401706.2014.928233},
+}
+
+@article{Ashraf1997,
+  title={Application of geostatistics to evaluate partial weather station networks},
+  author={Ashraf, Muhammad and Loftis, Jim C and Hubbard, KG},
+  journal={Agricultural and Forest Meteorology},
+  volume={84},
+  number={3-4},
+  pages={255--271},
+  year={1997},
+  publisher={Elsevier}
+}
+
+@article{Adhikary2017,
+  title={Cokriging for enhanced spatial interpolation of rainfall in two {A}ustralian catchments},
+  author={Adhikary, Sajal Kumar and Muttil, Nitin and Yilmaz, Abdullah Gokhan},
+  journal={Hydrological processes},
+  volume={31},
+  number={12},
+  pages={2143--2161},
+  year={2017},
+  publisher={Wiley Online Library}
+}
+
+
+@article{Forrester2007,
+  title={Multi-fidelity optimization via surrogate modelling},
+  author={Forrester, Alexander IJ and S{\'o}bester, Andr{\'a}s and Keane, Andy J},
+  journal={Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences},
+  volume={463},
+  number={2088},
+  pages={3251--3269},
+  year={2007},
+  publisher={The Royal Society London}
+}
+@article{Wilson2018vine,
+  title={Specification of informative prior distributions for multinomial models using vine copulas},
+  author={Wilson, Kevin James},
+  journal={Bayesian Analysis},
+  volume={13},
+  number={3},
+  pages={749--766},
+  year={2018},
+  publisher={International Society for Bayesian Analysis}
+}
+
+
+@article{Kadane1998,
+  title={Experiences in elicitation},
+  author={Kadane, Joseph and Wolfson, Lara J},
+  journal={Journal of the Royal Statistical Society: Series D (The Statistician)},
+  volume={47},
+  number={1},
+  pages={3--19},
+  year={1998},
+  publisher={Wiley Online Library}
+}
+
+@article{EFSA2014,
+  title={Guidance on expert knowledge elicitation in food and feed safety risk assessment},
+  author={{European Food Safety Authority}},
+  journal={EFSA Journal},
+  volume={12},
+  number={6},
+  pages={3734},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+
+
+
+@Manual{SHELFpkg,
+  title = {SHELF: Tools to Support the Sheffield Elicitation Framework},
+  author = {Jeremy Oakley},
+  year = {2021},
+  note = {R package version 1.8.0},
+  url = {https://CRAN.R-project.org/package=SHELF},
+}
+
+@article{Garthwaite05,
+          volume = {100},
+          number = {470},
+           month = {June},
+          author = {Paul H. Garthwaite and Joseph B. Kadane and Anthony O'Hagan},
+           title = {Statistical methods for eliciting probability distributions},
+         journal = {Journal of the American Statistical Association},
+           pages = {680--701},
+            year = {2005},
+        keywords = {Bayesian; Group Decision; Heuristics and Biases; Prior Distribution; Subjective Probability},
+             url = {http://oro.open.ac.uk/3470/},
+        abstract = {Elicitation is a key task for subjectivist Bayesians. Although skeptics hold that elicitation cannot (or perhaps should not) be done, in practice it brings statisticians closer to their clients and subject-matter expert colleagues. This article reviews the state of the art, reflecting the experience of statisticians informed by the fruits of a long line of psychological research into how people represent uncertain information cognitively and how they respond to questions about that information. In a discussion of the elicitation process, the first issue to address is what it means for an elicitation to be successful; that is, what criteria should be used. Our answer is that a successful elicitation faithfully represents the opinion of the person being elicited. It is not necessarily "true" in some objectivistic sense, and cannot be judged in that way. We see that elicitation as simply part of the process of statistical modeling. Indeed, in a hierarchical model at which point the likelihood ends and the prior begins is ambiguous. Thus the same kinds of judgment that inform statistical modeling in general also inform elicitation of prior distributions. The psychological literature suggests that people are prone to certain heuristics and biases in how they respond to situations involving uncertainty. As a result, some of the ways of asking questions about uncertain quantities are preferable to others, and appear to be more reliable. However, data are lacking on exactly how well the various methods work, because it is unclear, other than by asking using an elicitation method, just what the person believes. Consequently, one is reduced to indirect means of assessing elicitation methods. The tool chest of methods is growing. Historically, the first methods involved choosing hyperparameters using conjugate prior families, at a time when these were the only families for which posterior distributions could be computed. Modern computational methods, such as Markov chain Monte Carlo, have freed elicitation from this constraint. As a result, now both parametric and nonparametric methods are available for low-dimensional problems. High-dimensional problems are probably best thought of as lacking another hierarchical level, which has the effect of reducing the as-yet-unelicited parameter space. Special considerations apply to the elicitation of group opinions. Informal methods, such as Delphi, encourage the participants to discuss the issue in the hope of reaching consensus. Formal methods, such as weighted averages or logarithmic opinion pools, each have mathematical characteristics that are uncomfortable. Finally, there is the question of what a group opinion even means, because it is not necessarily the opinion of any participant.}
+}
+
+@incollection{Gonzalez2018,
+  title={Utility elicitation},
+  author={ Gonz{\'a}lez-Ortega, Jorge and Radovic, Vesela and Insua, David R{\'\i}os},
+  booktitle={Elicitation},
+  pages={241--264},
+  year={2018},
+  publisher={Springer}
+}
+
+@article{Ryan2016,
+  title={{A review of modern computational algorithms for Bayesian optimal design}},
+  author={Ryan, Elizabeth G and Drovandi, Christopher C and McGree, James M and Pettitt, Anthony N},
+  journal={International Statistical Review},
+  volume={84},
+  number={1},
+  pages={128--154},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+
+
+
+@book{Ohagan06,
+           title = {Uncertain Judgements: Eliciting Expert Probabilities},
+          author = {A. O'Hagan and C. E. Buck and A. Daneshkhah and J. R. Eiser and P. H. Garthwaite and D. J. Jenkinson and J. E. Oakley and T. Rakow},
+         address = {Chichester},
+       publisher = {John Wiley},
+            year = {2006},
+             url = {http://oro.open.ac.uk/17948/},
+        abstract = {Elicitation is the process of extracting expert knowledge about some unknown quantity or quantities, and formulating that information as a probability distribution. Elicitation is important in situations, such as modelling the safety of nuclear installations or assessing the risk of terrorist attacks, where expert knowledge is essentially the only source of good information. It also plays a major role in other contexts by augmenting scarce observational data, through the use of Bayesian statistical methods. However, elicitation is not a simple task, and practitioners need to be aware of a wide range of research findings in order to elicit expert judgements accurately and reliably. Uncertain Judgements introduces the area, before guiding the reader through the study of appropriate elicitation methods, illustrated by a variety of multi-disciplinary examples.}
+}
+
+@book{Smith2010,
+  title={Bayesian {D}ecision {A}nalysis: {P}rinciples and {P}ractice},
+  author={Smith, Jim Q},
+  year={2010},
+  publisher={Cambridge University Press}
+}
+
+@incollection{Robert1999,
+  title={The metropolis—Hastings algorithm},
+  author={Robert, Christian P and Casella, George},
+  booktitle={Monte Carlo statistical methods},
+  pages={231--283},
+  year={1999},
+  publisher={Springer}
+}
+
+@article{Singh2017,
+  title={Multi-objective geometry optimization of a gas cyclone using triple-fidelity co-{K}riging surrogate models},
+  author={Singh, Prashant and Couckuyt, Ivo and Elsayed, Khairy and Deschrijver, Dirk and Dhaene, Tom},
+  journal={Journal of Optimization Theory and Applications},
+  volume={175},
+  number={1},
+  pages={172--193},
+  year={2017},
+  publisher={Springer}
+}
+
+@article{Scott2010,
+  title={{A modern Bayesian look at the multi-armed bandit}},
+  author={Scott, Steven L},
+  journal={Applied Stochastic Models in Business and Industry},
+  volume={26},
+  number={6},
+  pages={639--658},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+
+@article{Chapelle2011,
+  title={An empirical evaluation of {T}hompson sampling},
+  author={Chapelle, Olivier and Li, Lihong},
+  journal={Advances in Neural Information Processing Systems},
+  volume={24},
+  pages={2249--2257},
+  year={2011},
+  publisher={Citeseer}
+}
+
+
+@article{Srinivas2009,
+  title={Gaussian process optimization in the bandit setting: No regret and experimental design},
+  author={Srinivas, Niranjan and Krause, Andreas and Kakade, Sham M and Seeger, Matthias},
+  journal={arXiv preprint arXiv:0912.3995},
+  year={2009}
+}
+@article{Domingo2020,
+  title={Using ice cores and {G}aussian process emulation to recover changes in the {G}reenland ice sheet during the last interglacial},
+  author={Domingo, Dario and Malmierca-Vallet, Irene and Sime, Louise and Voss, Jochen and Capron, Emilie},
+  journal={Journal of Geophysical Research: Earth Surface},
+  volume={125},
+  number={5},
+  pages={e2019JF005237},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+@article{White2018,
+  title={A model-independent iterative ensemble smoother for efficient history-matching and uncertainty quantification in very high dimensions},
+  author={White, Jeremy T},
+  journal={Environmental Modelling \& Software},
+  volume={109},
+  pages={191--201},
+  year={2018},
+  publisher={Elsevier}
+}
+
+
+@article{Andrianakis2015,
+    doi = {10.1371/journal.pcbi.1003968},
+    author = {Andrianakis, Ioannis AND Vernon, Ian R. AND McCreesh, Nicky AND McKinley, Trevelyan J. AND Oakley, Jeremy E. AND Nsubuga, Rebecca N. AND Goldstein, Michael AND White, Richard G.},
+    journal = {PLOS Computational Biology},
+    publisher = {Public Library of Science},
+    title = {Bayesian History Matching of Complex Infectious Disease Models Using Emulation: A Tutorial and a Case Study on HIV in Uganda},
+    year = {2015},
+    month = {01},
+    volume = {11},
+    url = {https://doi.org/10.1371/journal.pcbi.1003968},
+    pages = {1-18},
+    abstract = {Advances in scientific computing have allowed the development of complex models that are being routinely applied to problems in disease epidemiology, public health and decision making. The utility of these models depends in part on how well they can reproduce empirical data. However, fitting such models to real world data is greatly hindered both by large numbers of input and output parameters, and by long run times, such that many modelling studies lack a formal calibration methodology. We present a novel method that has the potential to improve the calibration of complex infectious disease models (hereafter called simulators). We present this in the form of a tutorial and a case study where we history match a dynamic, event-driven, individual-based stochastic HIV simulator, using extensive demographic, behavioural and epidemiological data available from Uganda. The tutorial describes history matching and emulation. History matching is an iterative procedure that reduces the simulator's input space by identifying and discarding areas that are unlikely to provide a good match to the empirical data. History matching relies on the computational efficiency of a Bayesian representation of the simulator, known as an emulator. Emulators mimic the simulator's behaviour, but are often several orders of magnitude faster to evaluate. In the case study, we use a 22 input simulator, fitting its 18 outputs simultaneously. After 9 iterations of history matching, a non-implausible region of the simulator input space was identified that was  times smaller than the original input space. Simulator evaluations made within this region were found to have a 65% probability of fitting all 18 outputs. History matching and emulation are useful additions to the toolbox of infectious disease modellers. Further research is required to explicitly address the stochastic nature of the simulator as well as to account for correlations between outputs.},
+    number = {1},
+}
+
+
+@article{Thompson1933,
+  title={On the likelihood that one unknown probability exceeds another in view of the evidence of two samples},
+  author={Thompson, William R},
+  journal={Biometrika},
+  volume={25},
+  number={3/4},
+  pages={285--294},
+  year={1933},
+  publisher={JSTOR}
+}
+
+
+@book{Schneider2006,
+series = {Scientific computation},
+publisher = {Springer},
+isbn = {9783540345602},
+year = {2006},
+title = {Stochastic Optimization},
+language = {eng},
+address = {Berlin},
+author = {Schneider, J. J and Kirkpatrick, S},
+keywords = {Electronic books},
+}
+
+@article{Kirkpatrick1983,
+  title={Optimization by simulated annealing},
+  author={Kirkpatrick, Scott and Gelatt Jr, C Daniel and Vecchi, Mario P},
+  journal={Science},
+  volume={220},
+  number={4598},
+  pages={671--680},
+  year={1983},
+  publisher={American association for the advancement of science}
+}
+@article{Pholdee2015,
+  title={An efficient optimum {L}atin hypercube sampling technique based on sequencing optimisation using simulated annealing},
+  author={Pholdee, Nantiwat and Bureerat, Sujin},
+  journal={International Journal of Systems Science},
+  volume={46},
+  number={10},
+  pages={1780--1789},
+  year={2015},
+  publisher={Taylor \& Francis}
+}
+@article{Neal2003,
+  title={Slice sampling},
+  author={Neal, Radford M},
+  journal={The Annals of Statistics},
+  volume={31},
+  number={3},
+  pages={705--767},
+  year={2003},
+  publisher={Institute of Mathematical Statistics}
+}
+
+
+@inproceedings{Joy2016,
+  title={{Hyperparameter tuning for big data using Bayesian optimisation}},
+  author={Joy, Tinu Theckel and Rana, Santu and Gupta, Sunil and Venkatesh, Svetha},
+  booktitle={2016 23rd International Conference on Pattern Recognition (ICPR)},
+  pages={2574--2579},
+  year={2016},
+  organization={IEEE}
+}
+
+@article{Sano2020,
+  title={Application of Bayesian optimization for pharmaceutical product development},
+  author={Sano, Syusuke and Kadowaki, Tadashi and Tsuda, Koji and Kimura, Susumu},
+  journal={Journal of Pharmaceutical Innovation},
+  volume={15},
+  number={3},
+  pages={333--343},
+  year={2020},
+  publisher={Springer}
+}
+
+
+@book{Gutin2007,
+series = {Combinatorial optimization ; 12},
+abstract = {This volume, which contains chapters written by reputable researchers, provides the state of the art in theory and algorithms for the traveling salesman problem (TSP). The book covers all important areas of study on TSP, including polyhedral theory for symmetric and asymmetric TSP, branch and bound, and branch and cut algorithms, probabilistic aspects of TSP, thorough computational analysis of heuristic and metaheuristic algorithms, theoretical analysis of approximation algorithms, including the emerging area of domination analysis of algorithms, discussion of TSP software and variations of TSP such as bottleneck TSP, generalized TSP, prize collecting TSP, maximizing TSP, orienteering problem, etc. Audience This book is intended for researchers, practitioners, and academicians in mathematics, computer science, and operations research. It is appropriate as a reference work or as a main or supplemental textbook in graduate and senior undergraduate courses and projects.},
+publisher = {Springer US},
+isbn = {9780306482137},
+year = {2007},
+title = {The Traveling Salesman Problem and Its Variations},
+language = {eng},
+address = {Boston, MA},
+author = {Gutin, Gregory},
+}
+
+@INPROCEEDINGS{Zit13,
+   booktitle = {22nd ESREL conference 2013},
+           month = {September},
+           title = {Availability growth and state-of-knowledge uncertainty simulation for offshore wind farms},
+          author = {Athena Zitrou and Tim Bedford and Lesley Walls and Kevin Wilson and Keith Bell},
+            year = {2013},
+         journal = {22nd ESREL conference 2013},
+        keywords = {availability growth, state-of-knowledge , offshore wind farms, uncertainty simulation, Management. Industrial Management, Electrical engineering. Electronics Nuclear engineering, Strategy and Management, Electrical and Electronic Engineering},
+             url = {https://strathprints.strath.ac.uk/45377/},
+        abstract = {The UK offshore wind sector has developed rapidly, but needs to develop even further to meet the low carbon targets set by the government. In order to increase capacity and reduce costs, new offshore wind farms will use larger and more complex technology that goes beyond current understanding and experience. As a result, predicting the technical performance of offshore wind farms involves a considerable amount of uncertainty, especially during early life when teething problems may arise. We present a model that allows us to distinguish between natural variability and state-of-knowledge uncertainty when assessing the growth in technical performance of offshore wind farms over early operational life. As such, the model can be used to inform decisions to reduce uncertainties and to support effective risk management. To describe wind farm performance, we use an indicator we call availability-informed capability measures the capacity of the farm to generate electricity. We use an example based on a two-phase Monte Carlo simulation to illustrate the use of the model.}
+
+}
+
+@article{Bedford2014,
+  title={On the construction of minimum information bivariate copula families},
+  author={Bedford, Tim and Wilson, Kevin J},
+  journal={Annals of the Institute of Statistical Mathematics},
+  volume={66},
+  number={4},
+  pages={703--723},
+  year={2014},
+  publisher={Springer}
+}
+
+@book{Pham2006,
+  title={Springer Handbook of Engineering Statistics},
+  author={Pham, Hoang},
+  volume={49},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{Finkelstein2007,
+  title={On statistical and information-based virtual age of degrading systems},
+  author={Finkelstein, Maxim},
+  journal={Reliability Engineering \& System Safety},
+  volume={92},
+  number={5},
+  pages={676--681},
+  year={2007},
+  publisher={Elsevier}
+}
+
+
+
+
+
+@article{Goldstein2006,
+  title={Bayes linear calibrated prediction for complex systems},
+  author={Goldstein, Michael and Rougier, Jonathan},
+  journal={Journal of the American Statistical Association},
+  volume={101},
+  number={475},
+  pages={1132--1143},
+  year={2006},
+  publisher={Taylor \& Francis}
+}
+
+@article{Rougier2009,
+  title={Analyzing the climate sensitivity of the HadSM3 climate model using ensembles from different but related experiments},
+  author={Rougier, Jonathan and Sexton, David MH and Murphy, James M and Stainforth, David},
+  journal={Journal of Climate},
+  volume={22},
+  number={13},
+  pages={3540--3557},
+  year={2009},
+  publisher={American Meteorological Society}
+}
+
+@article{Goldstein2009,
+title = {Reified Bayesian modelling and inference for physical systems},
+journal = {Journal of Statistical Planning and Inference},
+volume = {139},
+number = {3},
+pages = {1221-1239},
+year = {2009},
+issn = {0378-3758},
+doi = {https://doi.org/10.1016/j.jspi.2008.07.019},
+url = {https://www.sciencedirect.com/science/article/pii/S0378375808003303},
+author = {Michael Goldstein and Jonathan Rougier},
+keywords = {Computer simulator, Emulator, Model inadequacy, Structural error, Thermohaline circulation (THC), Model design},
+abstract = {We describe an approach, termed reified analysis, for linking the behaviour of mathematical models with inferences about the physical systems which the models represent. We describe the logical basis for the approach, based on coherent assessment of the implications of deficiencies in the mathematical model. We show how the statistical analysis may be carried out by specifying stochastic relationships between the model that we have, improved versions of the model that we might construct, and the system itself. We illustrate our approach with an example concerning the potential shutdown of the Thermohaline circulation in the Atlantic Ocean.}
+}
+
+@article{Vernon2017,
+  title={A {B}ayesian computer model analysis of robust {B}ayesian analyses},
+  author={Vernon, Ian and Gosling, John Paul},
+  journal={arXiv preprint arXiv:1703.01234},
+  year={2017}
+}
+
+
+@article{Roijers2017,
+  title={Multi-objective decision making},
+  author={Roijers, Diederik M and Whiteson, Shimon},
+  journal={Synthesis Lectures on Artificial Intelligence and Machine Learning},
+  volume={11},
+  number={1},
+  pages={1--129},
+  year={2017},
+  publisher={Morgan \& Claypool Publishers}
+}
+
+@article{Rougier2010,
+  title={Predicting snow velocity in large chute flows under different environmental conditions},
+  author={Rougier, Jonathan and Kern, Martin},
+  journal={Journal of the Royal Statistical Society: Series C (Applied Statistics)},
+  volume={59},
+  number={5},
+  pages={737--760},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{Snoek2012,
+  title={{Practical Bayesian optimization of machine learning algorithms}},
+  author={Snoek, Jasper and Larochelle, Hugo and Adams, Ryan P},
+  journal={arXiv preprint arXiv:1206.2944},
+  year={2012}
+}
+
+@article{Kim2020,
+  title={Bayesian optimization-based global optimal rank selection for compression of convolutional neural networks},
+  author={Kim, Taehyeon and Lee, Jieun and Choe, Yoonsik},
+  journal={IEEE Access},
+  volume={8},
+  pages={17605--17618},
+  year={2020},
+  publisher={IEEE}
+}
+
+
+@article{Marrel2012,
+  title={Global sensitivity analysis of stochastic computer models with joint metamodels},
+  author={Marrel, Amandine and Iooss, Bertrand and Da Veiga, S{\'e}bastien and Ribatet, Mathieu},
+  journal={Statistics and Computing},
+  volume={22},
+  number={3},
+  pages={833--847},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{Sobol1993,
+  title={Sensitivity estimates for nonlinear mathematical models},
+  author={Sobol', Ilya M},
+  journal={{Mathematical Modelling and Computational Experiments}},
+  volume={1},
+  number={4},
+  pages={407--414},
+  year={1993}
+}
+
+
+@article{Sudret2008,
+  title={Global sensitivity analysis using polynomial chaos expansions},
+  author={Sudret, Bruno},
+  journal={Reliability Engineering \& System Safety},
+  volume={93},
+  number={7},
+  pages={964--979},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@book{Pourmohamad2021,
+  title={Bayesian Optimization with Application to Computer Experiments},
+  author={Pourmohamad, Tony and Lee, Herbert KH},
+  year={2021},
+  publisher={Springer}
+}
+
+
+@article{Lawson2016,
+title = "Bayesian framework for power network planning under uncertainty",
+journal = "Sustainable Energy, Grids and Networks",
+volume = "7",
+pages = "47 - 57",
+year = "2016",
+issn = "2352-4677",
+doi = "https://doi.org/10.1016/j.segan.2016.05.003",
+url = "http://www.sciencedirect.com/science/article/pii/S2352467716300133",
+author = "A. Lawson and M. Goldstein and C.J. Dent",
+keywords = "Power system planning, Emulation, Cost benefit analysis, Uncertainty, Risk",
+abstract = "Effective transmission expansion planning is necessary to ensure a power system can satisfy all demand both reliably and economically. However, at the time reinforcement decisions are made many elements of the future system background are uncertain, such as demand level, type and location of installed generators, and plant availability statistics. Making decisions which account for such uncertainties is presently usually done by considering a small set of plausible scenarios, and the resulting limited coverage of parameter space limits confidence that the resulting decision will be a good one with respect to the real world. This paper presents a methodology which uses statistical emulators to quantify uncertainty in mathematical model outputs for all points at which it has not been evaluated, and hence to control properly uncertainties in the decision process arising from the finite size set of scenarios. The result is a generally applicable approach to network planning under uncertainty, including decision makers’ risk preferences, which scales well with problem size. The approach is demonstrated on a Great Britain test problem, which replicates key features of the model the Transmission Owners use for practical strategic planning studies."
+}
+
+
+@article{Jones1998,
+  title={Efficient global optimization of expensive black-box functions},
+  author={Jones, Donald R and Schonlau, Matthias and Welch, William J},
+  journal={Journal of Global optimization},
+  volume={13},
+  number={4},
+  pages={455--492},
+  year={1998},
+  publisher={Springer}
+}
+
+@article{Jones2016,
+  title={Bayes linear analysis for {B}ayesian optimal experimental design},
+  author={Jones, Matthew and Goldstein, Michael and Jonathan, Philip and Randell, David},
+  journal={Journal of Statistical Planning and Inference},
+  volume={171},
+  pages={115--129},
+  year={2016},
+  publisher={Elsevier}
+}
+@article{Prangle2022,
+  title={Bayesian experimental design without posterior calculations: an adversarial approach},
+  author={Prangle, Dennis and Harbisher, Sophie and Gillespie, Colin S},
+  journal={Bayesian Analysis},
+  volume={1},
+  number={1},
+  pages={1--31},
+  year={2022},
+  publisher={International Society for Bayesian Analysis}
+}
+
+@article{Overstall2017,
+  title={Bayesian design of experiments using approximate coordinate exchange},
+  author={Overstall, Antony M and Woods, David C},
+  journal={Technometrics},
+  volume={59},
+  number={4},
+  pages={458--470},
+  year={2017},
+  publisher={Taylor \& Francis}
+}
+
+@book{BDA3,
+  title={Bayesian {D}ata {A}nalysis},
+  author={Gelman, Andrew and Carlin, John B and Stern, Hal S and Dunson, David B and Vehtari, Aki and Rubin, Donald B},
+  year={2013},
+  publisher={CRC press}
+}
+
+
+@article{Overstall2016,
+  title={Multivariate emulation of computer simulators: model selection and diagnostics with application to a humanitarian relief model},
+  author={Overstall, Antony M and Woods, David C},
+  journal={Journal of the Royal Statistical Society. Series C, Applied statistics},
+  volume={65},
+  number={4},
+  pages={483},
+  year={2016},
+  publisher={Wiley-Blackwell}
+}
+
+@article{Saisana2005,
+  title={Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators},
+  author={Saisana, Michaela and Saltelli, Andrea and Tarantola, Stefano},
+  journal={Journal of the Royal Statistical Society: Series A (Statistics in Society)},
+  volume={168},
+  number={2},
+  pages={307--323},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@article{Xu16,
+issn = {2352-4677},
+abstract = {Investments in generation are high risk, and the introduction of renewable technologies exacerbated concern over capacity adequacy in future power systems. Long-term generation investment (LTGI) models are often used by policymakers to provide future projections given different input configurations. To understand both uncertainty around these projections and the ways they relate to the real-world, LTGI models can be calibrated and then used to make predictions or perform a sensitivity analysis (SA). However, LTGI models are generally computationally intensive and so only a limited number of simulations can be carried out. This paper demonstrates that the techniques of Bayesian emulation can be applied to efficiently perform calibration, prediction and SA for such complex LTGI models.A case study relating to GB power system generation planning is presented. Calibration reduces the uncertainty over a subset of model inputs and estimates the discrepancy between the model and the real power system. A plausible range of future projections that is consistent with the available knowledge (both historical observations and expert knowledge) can be predicted. The most important uncertain inputs are identified through a comprehensive SA. The results show that the use of calibration and SA approaches enables better decision making for both investors and policymakers.},
+journal = {Sustainable Energy, Grids and Networks},
+pages = {58--69},
+volume = {5},
+publisher = {Elsevier Ltd},
+number = {C},
+year = {2016},
+title = {Calibration and sensitivity analysis of long-term generation investment models using {B}ayesian emulation},
+language = {eng},
+author = {Xu, M. and Wilson, A. and Dent, C.J.},
+keywords = {Generation Investments ; Calibration ; Uncertainty Analysis ; Sensitivity Analysis ; Bayesian Emulation},
+}
+
+@article{Moss2020,
+  title={Bosh: Bayesian optimization by sampling hierarchically},
+  author={Moss, Henry B and Leslie, David S and Rayson, Paul},
+  journal={arXiv preprint arXiv:2007.00939},
+  year={2020}
+}
+
+
+@article{Zit16,
+issn = {0951-8320},
+abstract = {A model for availability growth is developed to capture the effect of systemic risk prior to construction of a complex system. The model has been motivated by new generation offshore wind farms where investment decisions need to be taken before test and operational data are available. We develop a generic model to capture the systemic risks arising from innovation in evolutionary system designs. By modelling the impact of major and minor interventions to mitigate weaknesses and to improve the failure and restoration processes of subassemblies, we are able to measure the growth in availability performance of the system. We describe the choices made in modelling our particular industrial setting using an example for a typical UK Round III offshore wind farm. We obtain point estimates of the expected availability having populated the simulated model using appropriate judgemental and empirical data. We show the relative impact of modelling systemic risk on system availability performance in comparison with estimates obtained from typical system availability modelling assumptions used in offshore wind applications. While modelling growth in availability is necessary for meaningful decision support in developing complex systems such as offshore wind farms, we also discuss the relative value of explicitly articulating epistemic uncertainties. Highlights•A new model is developed for system availability growth.•The model is motivated by and applied to the offshore wind industry.•The general model is applicable to systems where availability performance growth is important.•Systemic risks on system performance are aggregated from subassembly level modelling.•Availability-informed capability can be predicted under different intervention scenarios.},
+journal = {Reliability Engineering and System Safety},
+pages = {83--94},
+volume = {152},
+publisher = {Elsevier Ltd},
+number = {C},
+year = {2016},
+title = {A model for availability growth with application to new generation offshore wind farms},
+language = {eng},
+author = {Zitrou, Athena and Bedford, Tim and Walls, Lesley},
+keywords = {Availability Growth ; Systemic Risk ; Offshore Wind Farm ; Condition Monitoring}
+}
+
+@misc{scotGovt19,
+  author = {Scottish Government},
+  title = {Renewable and Low Carbon Energy},
+  howpublished = "\url{https://www.gov.scot/policies/renewable-and-low-carbon-energy/}",
+  year = {2019},
+  note = "[Online; accessed 20-February-2019]"
+}
+@article{Csillery2010,
+  title={Approximate Bayesian computation (ABC) in practice},
+  author={Csill{\'e}ry, Katalin and Blum, Michael GB and Gaggiotti, Oscar E and Fran{\c{c}}ois, Olivier},
+  journal={Trends in ecology \& evolution},
+  volume={25},
+  number={7},
+  pages={410--418},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{Dent2020,
+  title={The use of multiple models within an organisation},
+  author={Dent, Chris J and Goldstein, Michael and Wright, Andrew and Wynn, Henry P},
+  journal={arXiv preprint arXiv:2008.11813},
+  year={2020}
+}
+
+@article{Pukelsheim1994,
+  title={The three sigma rule},
+  author={Pukelsheim, Friedrich},
+  journal={The American Statistician},
+  volume={48},
+  number={2},
+  pages={88--91},
+  year={1994},
+  publisher={Taylor \& Francis Group}
+}
+
+@article{Fisher2021,
+  title={Parameter inference for a stochastic kinetic model of expanded polyglutamine proteins},
+  author={Fisher, Holly F and Boys, Richard J and Gillespie, Colin S and Proctor, Carole J and Golightly, Andrew},
+  journal={Biometrics},
+  volume={78},
+  number={3},
+  pages={1195--1208},
+  year={2022},
+  publisher={Wiley Online Library}
+}
+
+@article{Oates2021,
+  title={A statistical approach to surface metrology for 3D-printed stainless steel},
+  author={Oates, Chris J and Kendall, Wilfrid S and Fleming, Liam},
+  journal={Technometrics},
+  number={just-accepted},
+  pages={1--35},
+  year={2021},
+  publisher={Taylor \& Francis}
+}
+@book{Smith2013,
+  title={Handbook of stochastic models and analysis of manufacturing system operations},
+  author={Smith, J MacGregor and Tan, Bar{\i}{\c{s}}},
+  volume={20013},
+  year={2013},
+  publisher={Springer}
+}
+
+
+@article{Ohagan01,
+issn = {1369-7412},
+journal = {Journal of The Royal Statistical Society Series B-Statistical Methodology},
+pages = {425--450},
+volume = {63},
+publisher = {BLACKWELL PUBL LTD},
+year = {2001},
+title = {Bayesian calibration of computer models},
+language = {English},
+author = {Kennedy, MC and O'Hagan, A},
+}
+@article{Kennedy2006,
+  title={Case studies in {G}aussian process modelling of computer codes},
+  author={Kennedy, Marc C and Anderson, Clive W and Conti, Stefano and O'Hagan, Anthony},
+  journal={Reliability Engineering \& System Safety},
+  volume={91},
+  number={10-11},
+  pages={1301--1309},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@article{Keeney2005,
+  title={Selecting attributes to measure the achievement of objectives},
+  author={Keeney, Ralph L and Gregory, Robin S},
+  journal={Operations Research},
+  volume={53},
+  number={1},
+  pages={1--11},
+  year={2005},
+  publisher={INFORMS}
+}
+
+@article{Zhang2012,
+  title={Scenario analysis on future electricity supply and demand in {J}apan},
+  author={Zhang, Qi and Ishihara, Keiichi N and Mclellan, Benjamin C and Tezuka, Tetsuo},
+  journal={Energy},
+  volume={38},
+  number={1},
+  pages={376--385},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{Grewal2013,
+  title={Can cities become self-reliant in energy? A technological scenario analysis for {C}leveland, {O}hio},
+  author={Grewal, Parbir S and Grewal, Parwinder S},
+  journal={Cities},
+  volume={31},
+  pages={404--411},
+  year={2013},
+  publisher={Elsevier}
+}
+
+
+
+@article{Henderson09,
+issn = {0162-1459},
+abstract = {This article considers the problem of parameter estimation for a stochastic biological model of mitochondrial DNA population dynamics using experimental data on deletion mutation accumulation. The stochastic model is an attempt to describe the hypothesized link between deletion accumulation and neuronal loss in the substantia nigra region of the human brain. Inference for the parameters of the model is complicated by the fact that the model is both analytically intractable and slow to sample from. We show how the stochastic model can be approximated using a simple parametric statistical model with smoothly varying parameters. These parameters are treated as unknown functions and modeled using Gaussian process priors. Several simplifications of our Bayesian model are implemented to ease the computational burden. Throughout the article, we validate our models using predictive simulations. We demonstrate the validity of our fitted model on an independent dataset of substantia nigra neuron survival.},
+journal = {Journal of the American Statistical Association},
+pages = {76--87},
+volume = {104},
+publisher = {Taylor & Francis},
+number = {485},
+year = {2009},
+title = {Bayesian Emulation and Calibration of a Stochastic Computer Model of Mitochondrial {DNA} Deletions in Substantia Nigra Neurons},
+language = {eng},
+author = {Henderson, Daniel A. and Boys, Richard J. and Krishnan, Kim J. and Lawless, Conor and Wilkinson, Darren J.},
+keywords = {Bayesian Modeling ; Computer Experiments ; Gaussian Process ; Intractable Likelihood ; Inverse Problem ; Systems Biology},
+}
+
+
+@article{Frazier2018,
+  title={A tutorial on {B}ayesian optimization},
+  author={Frazier, Peter I},
+  journal={arXiv preprint arXiv:1807.02811},
+  year={2018}
+}
+@article{Vernon2022,
+  title={Bayesian Emulation and History Matching of {JUNE}},
+  author={Vernon, Ian and Owen, Jonathan and Aylett-Bullock, Joseph and Cuesta-Lazaro, Carolina and Frawley, Jonathan and Quera-Bofarull, Arnau and Sedgewick, Aidan and Shi, Difu and Truong, Henry and Turner, Mark and others},
+  journal={medRxiv},
+  year={2022},
+  publisher={Cold Spring Harbor Laboratory Press}
+}
+@article{Vernon2022tense,
+  title={Bayesian Emulation for Computer Models with Multiple Partial Discontinuities},
+  author={Vernon, Ian and Owen, Jonathan and Carter, Jonathan},
+  journal={arXiv preprint arXiv:2210.10468},
+  year={2022}
+}
+
+
+@article{Vernon2022bayes,
+author = {Ian Vernon and John Paul Gosling},
+title = {{A Bayesian Computer Model Analysis of Robust Bayesian Analyses}},
+journal = {Bayesian Analysis Advanced Publication},
+publisher = {International Society for Bayesian Analysis},
+pages = {1 -- 33},
+keywords = {emulation, Gaussian process, sensitivity analysis},
+year = {2022},
+doi = {10.1214/22-BA1340},
+URL = {https://doi.org/10.1214/22-BA1340}
+}
+@article{Jackson2018,
+  title={Bayesian uncertainty analysis establishes the link between the parameter space of a complex model of hormonal crosstalk in Arabidopsis root development and experimental measurements},
+  author={Jackson, Samuel E and Vernon, Ian and Liu, Junli and Lindsey, Keith},
+  journal={Stat. Appl. Genet. Mol. Biol},
+  volume={11},
+  year={2018}
+}
+
+@article{Jackson2023,
+  title={Efficient Emulation of Computer Models Utilising Multiple Known Boundaries of Differing Dimension},
+  author={Jackson, Samuel E and Vernon, Ian},
+  journal={Bayesian Analysis},
+  volume={18},
+  number={1},
+  pages={165--191},
+  year={2023},
+  publisher={International Society for Bayesian Analysis}
+}
+
+
+@book{Keeney1976,
+series = {Wiley series in probability and mathematical statistics},
+publisher = {Wiley},
+isbn = {0471465100},
+year = {1976},
+title = {Decisions with Multiple Objectives: Preferences and Value Rradeoffs},
+language = {eng},
+address = {New York},
+author = {Keeney, Ralph L. and Raiffa, Howard},
+keywords = {Decision making; Decision Making; Policy sciences},
+lccn = {76007895},
+}
+
+
+@article{Boys2018,
+  title={Bayesian inference for a partially observed birth--death process using data on proportions},
+  author={Boys, Richard J and Ainsworth, Holly F and Gillespie, Colin S},
+  journal={Australian \& New Zealand Journal of Statistics},
+  volume={60},
+  number={2},
+  pages={157--173},
+  year={2018},
+  publisher={Wiley Online Library}
+}
+
+@article{Paterson2018,
+  title={Offshore wind installation vessels--A comparative assessment for {UK} offshore rounds 1 and 2},
+  author={Paterson, J and D'Amico, F and Thies, PR and Kurt, RE and Harrison, G},
+  journal={Ocean Engineering},
+  volume={148},
+  pages={637--649},
+  year={2018},
+  publisher={Elsevier}
+}
+
+
+@book{BLS07,
+publisher = {John Wiley},
+address = {Hoboken, N.J.},
+isbn = {9780470015629},
+year = {2007},
+title = {Bayes Linear Statistics: Theory and Methods},
+language = {eng},
+author = {Goldstein, Michael},
+keywords = {Bayesian statistical decision theory; Linear systems; Computational complexity},
+lccn = {2006033618},
+}
+
+@inproceedings{Ferdinand2018,
+  title={Determining spare part inventory for offshore wind farm substations based on FMEA analysis},
+  author={Ferdinand, Robert and Monti, Antonello and Labusch, Karsten},
+  booktitle={2018 IEEE PES innovative smart grid technologies conference europe (ISGT-europe)},
+  pages={1--6},
+  year={2018},
+  organization={IEEE}
+}
+
+
+
+@article{Seyr2019,
+  title={Decision support models for operations and maintenance for offshore wind farms: A review},
+  author={Seyr, Helene and Muskulus, Michael},
+  journal={Applied Sciences},
+  volume={9},
+  number={2},
+  pages={278},
+  year={2019},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+
+@article{Wilson18,
+issn = {2352-4677},
+abstract = {Policy-makers need to be confident that decisions based on the outputs of energy system models will be robust in the real-world. To make robust decisions it is critical that the consequences of uncertainty in model outputs are assessed. This paper presents statistical methodology for quantifying uncertainty associated with the output of a computer model of the long-term GB electricity supply. The output of the computer model studied is the projection of wholesale electricity prices from 2016 to 2030. The effect on wholesale prices of both uncertainty in input parameters and structural discrepancy is modelled. A probability distribution is used to model uncertainty over four inputs of the model: gas price, demand, EU ETS price and future offshore deployment. Estimates of the structural discrepancy introduced by the use of smoothed gas price projections and assuming that coal prices out to 2030 are known are obtained from experimentation with the computer model. A statistical model, known as an emulator, is fitted to a set of computer model evaluations and used to model uncertainty in the output of the computer model at inputs that have not been tested. The emulator is combined with the probability distribution over the inputs and the estimate of structural discrepancy to make an assessment of the overall uncertainty in the wholesale electricity price projections. A sensitivity analysis is also performed to investigate the effect of each of the four inputs on the trajectory of wholesale electricity prices.},
+journal = {Sustainable Energy, Grids and Networks},
+pages = {42--55},
+volume = {13},
+publisher = {Elsevier Ltd},
+number = {C},
+year = {2018},
+title = {Quantifying uncertainty in wholesale electricity price projections using {B}ayesian emulation of a generation investment model},
+language = {eng},
+author = {Wilson, A.L. and Dent, C.J. and Goldstein, M.},
+keywords = {Uncertainty Quantification ; Bayesian Emulation ; Bayes Linear ; Wholesale Electricity Price Projection},
+}
+
+@article{Saltelli2010,
+  title={How to avoid a perfunctory sensitivity analysis},
+  author={Saltelli, Andrea and Annoni, Paola},
+  journal={Environmental Modelling \& Software},
+  volume={25},
+  number={12},
+  pages={1508--1517},
+  year={2010},
+  publisher={Elsevier}
+}
+
+
+@inproceedings{Chen2017,
+  title={Stochastic co-{K}riging for steady-state simulation metamodeling},
+  author={Chen, Xi and Hemmati, Sahar and Yang, Feng},
+  booktitle={Proceedings of the 2017 Winter Simulation Conference},
+  pages={136},
+  year={2017},
+  organization={IEEE Press}
+}
+
+@article{Qian2008,
+  title={Bayesian hierarchical modeling for integrating low-accuracy and high-accuracy experiments},
+  author={Qian, Peter ZG and Wu, CF Jeff},
+  journal={Technometrics},
+  volume={50},
+  number={2},
+  pages={192--204},
+  year={2008},
+  publisher={Taylor \& Francis}
+}
+
+@inproceedings{Goldberg1998,
+  title={Regression with input-dependent noise: A {G}aussian process treatment},
+  author={Goldberg, Paul W and Williams, Christopher KI and Bishop, Christopher M},
+  booktitle={Advances in {N}eural {I}nformation {P}rocessing {S}ystems},
+  pages={493--499},
+  year={1998}
+}
+
+@misc{Konomi2019,
+    title={Bayesian analysis of multifidelity computer models with local features and non-nested experimental designs: Application to the WRF model},
+    author={Bledar A. Konomi and Georgios Karagiannis},
+    year={2019},
+    eprint={1910.08063},
+    archivePrefix={arXiv},
+    primaryClass={stat.ME}
+}
+@article{Yates1987,
+  title={Estimating soil water content using cokriging},
+  author={Yates, SR and Warrick, AW},
+  journal={Soil Science Society of America Journal},
+  volume={51},
+  number={1},
+  pages={23--30},
+  year={1987},
+  publisher={Wiley Online Library}
+}
+@article{Lark2007,
+  title={Cokriging particle size fractions of the soil},
+  author={Lark, RM and Bishop, TFA},
+  journal={European Journal of Soil Science},
+  volume={58},
+  number={3},
+  pages={763--774},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@article{Sacks89,
+ ISSN = {08834237},
+ abstract = {Many scientific phenomena are now investigated by complex computer models or codes. A computer experiment is a number of runs of the code with various inputs. A feature of many computer experiments is that the output is deterministic--rerunning the code with the same inputs gives identical observations. Often, the codes are computationally expensive to run, and a common objective of an experiment is to fit a cheaper predictor of the output to the data. Our approach is to model the deterministic output as the realization of a stochastic process, thereby providing a statistical basis for designing experiments (choosing the inputs) for efficient prediction. With this model, estimates of uncertainty of predictions are also available. Recent work in this area is reviewed, a number of applications are discussed, and we demonstrate our methodology with an example.},
+ author = {Jerome Sacks and William J. Welch and Toby J. Mitchell and Henry P. Wynn},
+ journal = {Statistical Science},
+ number = {4},
+ pages = {409--423},
+ publisher = {Institute of Mathematical Statistics},
+ title = {Design and Analysis of Computer Experiments},
+ volume = {4},
+ year = {1989}
+}
+
+@article{Gneiting2002,
+  title={Nonseparable, stationary covariance functions for space--time data},
+  author={Gneiting, Tilmann},
+  journal={Journal of the American Statistical Association},
+  volume={97},
+  number={458},
+  pages={590--600},
+  year={2002},
+  publisher={Taylor \& Francis}
+}
+
+
+@article{Astfalck19,
+issn = {0029-8018},
+abstract = {The development and use of numerical simulators to predict vessel motions is essential to design and operational decision making in offshore engineering. Increasingly, probabilistic analyses of these simulators are being used to quantify prediction uncertainty. In practice, obtaining the required number of model evaluations may be prohibited by time and computational constraints. Emulation reduces the computational burden by forming a statistical surrogate of the model. The method is Bayesian and treats the numerical simulator as an unknown function modelled by a Gaussian process prior, with covariances of the model outputs constructed as a function of the covariances of the inputs. In offshore engineering, simulator inputs include directional quantities and we describe a way to build this information into the covariance structure. The methodology is discussed with reference to a numerical simulator which computes the mean turret offset amplitude of a FPSO in response to environmental forcing. It is demonstrated through statistical diagnostics that the emulator is well designed, with evaluations executed around 60,000 times faster than the numeric simulator. The method is generalisable to many offshore engineering numerical simulators that require directional inputs and is widely applicable to industry. •Emulation is used to reduce the computational expense of a numerical simulator.•Methodology is developed to allow for the emulation of directional inputs.•The emulator is validated using a suite of statistical validation diagnostics.•Mean offset amplitude is emulated for a FPSO moored in the Australian NW shelf.},
+journal = {Ocean Engineering},
+pages = {726--736},
+volume = {172},
+publisher = {Elsevier Ltd},
+year = {2019},
+title = {Emulation of vessel motion simulators for computationally efficient uncertainty quantification},
+language = {eng},
+author = {Astfalck, L.C. and Cripps, E.J. and Gosling, J.P. and Milne, I.A.},
+keywords = {Gaussian Process Emulation ; Fpso Vessel Motions ; Directional Inputs ; Uncertainty Quantification ; Bayesian Statistics},
+}
+
+@article{Fricker2013,
+  title={Multivariate {G}aussian process emulators with nonseparable covariance structures},
+  author={Fricker, Thomas E and Oakley, Jeremy E and Urban, Nathan M},
+  journal={Technometrics},
+  volume={55},
+  number={1},
+  pages={47--56},
+  year={2013},
+  publisher={Taylor \& Francis}
+}
+
+
+@article{Fricker2011,
+  title={Probabilistic uncertainty analysis of an {FRF} of a structure using a {G}aussian process emulator},
+  author={Fricker, Thomas E and Oakley, Jeremy E and Sims, Neil D and Worden, Keith},
+  journal={Mechanical Systems and Signal Processing},
+  volume={25},
+  number={8},
+  pages={2962--2975},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{Oakley2017,
+  title={Calibration of stochastic computer simulators using likelihood emulation},
+  author={Oakley, Jeremy E and Youngman, Benjamin D},
+  journal={Technometrics},
+  volume={59},
+  number={1},
+  pages={80--92},
+  year={2017},
+  publisher={Taylor \& Francis}
+}
+
+
+@article{Becker2012,
+  title={Bayesian sensitivity analysis of a nonlinear finite element model},
+  author={Becker, W and Oakley, JE and Surace, C and Gili, P and Rowson, J and Worden, K},
+  journal={Mechanical Systems and Signal Processing},
+  volume={32},
+  pages={18--31},
+  year={2012},
+  publisher={Elsevier}
+}
+
+
+@incollection{Golightly2013,
+  title={Simulation of stochastic kinetic models},
+  author={Golightly, Andrew and Gillespie, Colin S},
+  booktitle={In Silico Systems Biology},
+  pages={169--187},
+  year={2013},
+  publisher={Springer}
+}
+
+
+
+@article{Plumlee2014,
+author = {Matthew Plumlee and Rui Tuo},
+title = {Building Accurate Emulators for Stochastic Simulations via Quantile {K}riging},
+journal = {Technometrics},
+volume = {56},
+number = {4},
+pages = {466-473},
+year  = {2014},
+publisher = {Taylor & Francis},
+doi = {10.1080/00401706.2013.860919},
+}
+
+
+
+@article{Rocchetta2018,
+  title={A power-flow emulator approach for resilience assessment of repairable power grids subject to weather-induced failures and data deficiency},
+  author={Rocchetta, Roberto and Zio, Enrico and Patelli, Edoardo},
+  journal={Applied Energy},
+  volume={210},
+  pages={339--350},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{Zhang2019,
+  title={Distance-distributed design for Gaussian process surrogates},
+  author={Zhang, Boya and Cole, D Austin and Gramacy, Robert B},
+  journal={Technometrics},
+  volume={63},
+  number={1},
+  pages={40--52},
+  year={2021},
+  publisher={Taylor \& Francis}
+}
+
+
+@article{Qian2009,
+    author = {Qian, Peter Z. G.},
+    title = "{Nested Latin hypercube designs}",
+    journal = {Biometrika},
+    volume = {96},
+    number = {4},
+    pages = {957-970},
+    year = {2009},
+    month = {09},
+    abstract = "{We propose an approach to constructing nested Latin hypercube designs. Such designs are useful for conducting multiple computer experiments with different levels of accuracy. A nested Latin hypercube design with two layers is defined to be a special Latin hypercube design that contains a smaller Latin hypercube design as a subset. Our method is easy to implement and can accommodate any number of factors. We also extend this method to construct nested Latin hypercube designs with more than two layers. Illustrative examples are given. Some statistical properties of the constructed designs are derived.}",
+    issn = {0006-3444},
+    doi = {10.1093/biomet/asp045},
+    url = {https://doi.org/10.1093/biomet/asp045},
+    eprint = {http://oup.prod.sis.lan/biomet/article-pdf/96/4/957/587603/asp045.pdf},
+}
+
+@article{Vanhellemont2014,
+  title={Turbid wakes associated with offshore wind turbines observed with Landsat 8},
+  author={Vanhellemont, Quinten and Ruddick, Kevin},
+  journal={Remote Sensing of Environment},
+  volume={145},
+  pages={105--115},
+  year={2014},
+  publisher={Elsevier}
+}
+@article{Williamson2013,
+  title={Efficient uniform designs for multi-wave computer experiments},
+  author={Williamson, Daniel and Vernon, Ian},
+  journal={arXiv preprint arXiv:1309.3520},
+  year={2013}
+}
+
+@article{Williamson2012,
+  title={Bayesian policy support for adaptive strategies using computer models for complex physical systems},
+  author={Williamson, Danny and Goldstein, M},
+  journal={Journal of the Operational Research Society},
+  volume={63},
+  number={8},
+  pages={1021--1033},
+  year={2012},
+  publisher={Taylor \& Francis}
+}
+@article{Garbunoinigo2020,
+  title={History matching with probabilistic emulators and active learning},
+  author={Garbuno-Inigo, Alfredo and DiazDelaO, F Alejandro and Zuev, Konstantin M},
+  journal={arXiv preprint arXiv:2004.07878},
+  year={2020}
+}
+
+@inproceedings{Kersting2007,
+  title={Most likely heteroscedastic {G}aussian process regression},
+  author={Kersting, Kristian and Plagemann, Christian and Pfaff, Patrick and Burgard, Wolfram},
+  booktitle={Proceedings of the 24th international conference on Machine learning},
+  pages={393--400},
+  year={2007},
+  organization={ACM}
+}
+
+@book{Santner2003,
+  title={The {D}esign and {A}nalysis of {C}omputer {E}xperiments},
+  author={Santner, Thomas J and Williams, Brian J and Notz, William and Williams, Brian J},
+  year={2003},
+  edition = {1st},
+  publisher={Springer}
+}
+
+
+@article{Morris1995,
+  title={Exploratory designs for computational experiments},
+  author={Morris, Max D and Mitchell, Toby J},
+  journal={Journal of Statistical Planning and Inference},
+  volume={43},
+  number={3},
+  pages={381--402},
+  year={1995},
+  publisher={Elsevier}
+}
+
+@article{Moon2011,
+  title={Algorithms for generating maximin Latin hypercube and orthogonal designs},
+  author={Moon, Hyejung and Dean, Angela and Santner, Thomas},
+  journal={Journal of Statistical Theory and Practice},
+  volume={5},
+  number={1},
+  pages={81--98},
+  year={2011},
+  publisher={Springer}
+}
+
+
+
+@inproceedings{Wilson2017,
+ author = {James T. Wilson and Riccardo Moriconi and Frank Hutter and Marc P. Deisenroth},
+ booktitle = {NIPS Workshop on Bayesian Optimization},
+ title = {The Reparameterization Trick for Acquisition Functions},
+ url = {https://bayesopt.github.io/papers/2017/32.pdf},
+ year = {2017}
+}
+
+
+
+@inproceedings{Bergstra2011,
+ author = {Bergstra, James and Bardenet, R\'{e}mi and Bengio, Yoshua and K\'{e}gl, Bal\'{a}zs},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {J. Shawe-Taylor and R. Zemel and P. Bartlett and F. Pereira and K.Q. Weinberger},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Algorithms for Hyper-Parameter Optimization},
+ url = {https://proceedings.neurips.cc/paper/2011/file/86e8f7ab32cfd12577bc2619bc635690-Paper.pdf},
+ volume = {24},
+ year = {2011}
+}
+@article{Higham2009,
+  title={Cholesky factorization},
+  author={Higham, Nicholas J},
+  journal={Wiley Interdisciplinary Reviews: Computational Statistics},
+  volume={1},
+  number={2},
+  pages={251--254},
+  year={2009},
+  publisher={Wiley Online Library}
+}
+
+@Article{Williamson2017,
+AUTHOR = {Williamson, D. B. and Blaker, A. T. and Sinha, B.},
+TITLE = {Tuning without over-tuning: parametric uncertainty quantification for the {NEMO} ocean model},
+JOURNAL = {Geoscientific Model Development},
+VOLUME = {10},
+YEAR = {2017},
+NUMBER = {4},
+PAGES = {1789--1816},
+URL = {https://gmd.copernicus.org/articles/10/1789/2017/},
+DOI = {10.5194/gmd-10-1789-2017}
+}
+
+@article{Gramacy12,
+issn = {0960-3174},
+abstract = {Most surrogate models for computer experiments are interpolators, and the most common interpolator is a Gaussian process (GP) that deliberately omits a small-scale (measurement) error term called the nugget . The explanation is that computer experiments are, by definition, “deterministic”, and so there is no measurement error. We think this is too narrow a focus for a computer experiment and a statistically inefficient way to model them. We show that estimating a (non-zero) nugget can lead to surrogate models with better statistical properties, such as predictive accuracy and coverage, in a variety of common situations.},
+journal = {Statistics and Computing},
+pages = {713--722},
+volume = {22},
+publisher = {Springer US},
+number = {3},
+address = {Boston},
+year = {2012},
+title = {Cases for the nugget in modelling computer experiments},
+language = {eng},
+author = {Gramacy, Robert and Lee, Herbert},
+keywords = {Computer simulator ; Surrogate model ; Gaussian process ; Interpolation ; Smoothing}
+}
+@article{Schmidt1981,
+  title={Biomechanical investigation to determine physical and traumatological differentiation criteria for the maximum load capacity of head and vertebral column with and without protective helmet under effects of impact},
+  author={Schmidt, G and Mattern, R and Sch{\"u}ler, F},
+  journal={EEC Research Program on Biomechanics of Impacts, Final report, Phase III, Project G},
+  volume={5},
+  year={1981}
+}
+
+
+@article{Cumming2010,
+  title={Bayes linear uncertainty analysis for oil reservoirs based on multiscale computer experiments},
+  author={Cumming, Jonathan A and Goldstein, Michael},
+  journal={The Oxford Handbook of Applied Bayesian Analysis},
+  pages={241--270},
+  year={2010},
+  publisher={Oxford University Press Oxford}
+}
+@phdthesis{baker-thesis2021,
+  title={Emulation of Stochastic Computer Models with an Application to Building Design},
+  author={Baker, Evan},
+  year={2021},
+  school={University of Exeter}
+}
+
+
+@phdthesis{Boukouvalas2010,
+  title={Emulation of random output simulators},
+  author={Boukouvalas, Alexis},
+  year={2010},
+  school={Aston University}
+}
+@phdthesis{Volidina-thesis2020,
+  title={Uncertainty Quantification for complex computer models with nonstationary output. Bayesian optimal design for iterative refocussing},
+  author={Volodina, Victoria},
+  year={2020},
+  school={University of Exeter}
+}
+
+@article{Roth2022,
+  title={Flood hazard model calibration using multiresolution model output},
+  author={Roth, Samantha M and Lee, Ben Seiyon and Sharma, Sanjib and Hosseini-Shakib, Iman and Keller, Klaus and Haran, Murali},
+  journal={Environmetrics},
+  pages={e2769},
+  year={2022},
+  publisher={Wiley Online Library}
+}
+
+
+@article{Bower2010,
+  title={Galaxy formation: a {B}ayesian uncertainty analysis},
+  author={Bower, Richard G and Goldstein, Michael and Vernon, Ian},
+  journal={Bayesian analysis},
+  volume={5},
+  number={4},
+  pages={619--669},
+  year={2010},
+  publisher={International Society for Bayesian Analysis}
+}
+@article{Vernon2019,
+  title={Known boundary emulation of complex computer models},
+  author={Vernon, Ian and Jackson, Samuel E and Cumming, Jonathan A},
+  journal={SIAM/ASA Journal on Uncertainty Quantification},
+  volume={7},
+  number={3},
+  pages={838--876},
+  year={2019},
+  publisher={SIAM}
+}
+
+@article{Vernon14,
+issn = {08834237},
+abstract = {Cosmologists at the Institute of Computational Cosmology, Durham University, have developed a state of the art model of galaxy formation known as Galform, intended to contribute to our understanding of the formation, growth and subsequent evolution of galaxies in the presence of dark matter. Galform requires the specification of many input parameters and takes a significant time to complete one simulation, making comparison between the model's output and real observations of the Universe extremely challenging. This paper concerns the analysis of this problem using Bayesian emulation within an iterative history matching strategy, and represents the most detailed uncertainty analysis of a galaxy formation simulation yet performed.},
+journal = {Statistical Science},
+pages = {81--90},
+volume = {29},
+publisher = {Institute of Mathematical Statistics},
+number = {1},
+year = {2014},
+title = {Galaxy Formation: {B}ayesian History Matching for the Observable Universe},
+language = {eng},
+author = {Vernon, Ian and Goldstein, Michael and Bower, Richard},
+keywords = {Physical sciences -- Astronomy -- Astronomical objects ; Physical sciences -- Astronomy -- Galactic astronomy ; Physical sciences -- Physics -- Matter ; Physical sciences -- Astronomy -- Astronomical research ; Physical sciences -- Astronomy -- Astronomical cosmology ; Applied sciences -- Research methods -- Modeling ; Applied sciences -- Research methods -- Modeling ; Mathematics -- Applied mathematics -- Statistics ; Physical sciences -- Astronomy -- Astronomical objects ; Physical sciences -- Astronomy -- Astronomical objects}
+}
+@article{Andrianakis2017,
+  title={History matching of a complex epidemiological model of human immunodeficiency virus transmission by using variance emulation},
+  author={Andrianakis, I and Vernon, I and McCreesh, N and McKinley, TJ and Oakley, JE and Nsubuga, RN and Goldstein, M and White, RG},
+  journal={Journal of the Royal Statistical Society. Series C, Applied Statistics},
+  volume={66},
+  number={4},
+  pages={717},
+  year={2017},
+  publisher={Wiley-Blackwell}
+}
+
+@article{andrianakis2017a,
+  title={Efficient history matching of a high dimensional individual-based HIV transmission model},
+  author={Andrianakis, Ioannis and McCreesh, Nicky and Vernon, Ian and McKinley, Trevelyan J and Oakley, Jeremy E and Nsubuga, Rebecca N and Goldstein, Michael and White, Richard G},
+  journal={SIAM/ASA Journal on Uncertainty Quantification},
+  volume={5},
+  number={1},
+  pages={694--719},
+  year={2017},
+  publisher={SIAM}
+}
+@article{Craig1996,
+  title={Bayes linear strategies for matching hydrocarbon reservoir history},
+  author={Craig, PS and Goldstein, Michael and Seheult, AH and Smith, JA},
+  journal={Bayesian statistics},
+  volume={5},
+  pages={69--95},
+  year={1996},
+  publisher={Oxford University Press Oxford}
+}
+@incollection{Craig1997,
+  title={Pressure matching for hydrocarbon reservoirs: a case study in the use of {B}ayes linear strategies for large computer experiments},
+  author={Craig, Peter S and Goldstein, Michael and Seheult, Allan H and Smith, James A},
+  booktitle={Case Studies in Bayesian Statistics},
+  pages={37--93},
+  year={1997},
+  publisher={Springer}
+}
+@article{Drovandi2021,
+  title={A Semiautomatic Method for History Matching Using Sequential {M}onte {C}arlo},
+  author={Drovandi, Christopher and Nott, David J and Pagendam, Daniel E},
+  journal={SIAM/ASA Journal on Uncertainty Quantification},
+  volume={9},
+  number={3},
+  pages={1034--1063},
+  year={2021},
+  publisher={SIAM}
+}
+
+@article{Williamson2013a,
+  title={History matching for exploring and reducing climate model parameter space using observations and a large perturbed physics ensemble},
+  author={Williamson, Daniel and Goldstein, Michael and Allison, Lesley and Blaker, Adam and Challenor, Peter and Jackson, Laura and Yamazaki, Kuniko},
+  journal={Climate dynamics},
+  volume={41},
+  number={7},
+  pages={1703--1729},
+  year={2013},
+  publisher={Springer}
+}
+@article{Vernon2010,
+  title={Galaxy formation: a {B}ayesian uncertainty analysis},
+  author={Vernon, Ian and Goldstein, Michael and Bower, Richard G and others},
+  journal={{B}ayesian {A}nalysis},
+  volume={5},
+  number={4},
+  pages={619--669},
+  year={2010},
+  publisher={International Society for {B}ayesian Analysis}
+}
+@article{Seshadri2020,
+  title={Bayesian Assessments of Aeroengine Performance},
+  author={Seshadri, Pranay and Duncan, Andrew and Thorne, George and Parks, Geoffrey and Girolami, Mark},
+  journal={arXiv preprint arXiv:2011.14698},
+  year={2020}
+}
+
+
+
+@article{Bastos09,
+issn = {0040-1706},
+abstract = {Mathematical models, usually implemented in computer programs known as simulators, are widely used in all areas of science and technology to represent complex real-world phenomena. Simulators are often so complex that they take appreciable amounts of computer time or other resources to run. In this context, a methodology has been developed based on building a statistical representation of the simulator, known as an emulator. The principal approach to building emulators uses Gaussian processes. This work presents some diagnostics to validate and assess the adequacy of a Gaussian process emulator as surrogate for the simulator. These diagnostics are based on comparisons between simulator outputs and Gaussian process emulator outputs for some test data, known as validation data, defined by a sample of simulator runs not used to build the emulator. Our diagnostics take care to account for correlation between the validation data. To illustrate a validation procedure, we apply these diagnostics to two different data sets.},
+journal = {Technometrics},
+pages = {425--438},
+volume = {51},
+publisher = {Taylor & Francis},
+number = {4},
+year = {2009},
+title = {Diagnostics for {G}aussian Process Emulators},
+language = {eng},
+author = {Bastos, Leonardo S. and O'Hagan, Anthony},
+keywords = {Bayesian Inference ; Computer Experiments ; Diagnostics ; Emulation ; Gaussian Process},
+}
+
+@article{Ren13,
+  title={Assurance calculations for planning clinical trials with time-to-event outcomes},
+  author={Ren, Shijie and Oakley, Jeremy E},
+  journal={{Statistics in Medicine}},
+  volume={33},
+  number={1},
+  pages={31--45},
+  year={2014},
+  publisher={Wiley Online Library}
+}
+
+@article{Wilson2021,
+  title={Assurance for sample size determination in reliability demonstration testing},
+  author={Wilson, Kevin J and Farrow, Malcolm},
+  journal={Technometrics},
+  volume={63},
+  number={4},
+  pages={523--535},
+  year={2021},
+  publisher={Taylor \& Francis}
+}
+
+@article{Loeppky2009,
+author = {Jason L. Loeppky and Jerome Sacks and William J. Welch},
+title = {Choosing the Sample Size of a Computer Experiment: A Practical Guide},
+journal = {Technometrics},
+volume = {51},
+number = {4},
+pages = {366-376},
+year  = {2009},
+publisher = {Taylor & Francis},
+doi = {10.1198/TECH.2009.08040},
+
+URL = {
+        https://doi.org/10.1198/TECH.2009.08040
+
+},
+eprint = {
+        https://doi.org/10.1198/TECH.2009.08040
+
+}
+
+}
+
+@book{Wilkinson2011,
+series = {Chapman \& Hall/CRC Mathematical and Computational Biology},
+publisher = {Taylor and Francis},
+isbn = {9781439837764},
+year = {2011},
+title = {Stochastic modelling for systems biology, second edition},
+edition = {2nd},
+language = {eng},
+address = {Hoboken},
+author = {Wilkinson, Darren James},
+keywords = {Electronic books}
+}
+
+@misc{SHELF4,
+author = {Oakley, J. E. and {O'Hagan}, A.},
+year = {2019},
+title = {{SHELF: the Sheffield Elicitation
+Framework (Version 4)}},
+address = {{School of Mathematics and Statistics, University
+of Sheffield, UK}},
+url = {http://tonyohagan.co.uk/shelf},
+howpublished = {\url{http://tonyohagan.co.uk/shelf}}
+}
+
+@article{Smith1954,
+  title={Resuscitation of Hamsters after Supercooling or Partial Crystallization at Body Temperatures Below 0°{C}.},
+  author={Smith, AU and Lovelock, JE and Parkes, AS},
+  journal={Nature},
+  volume={173},
+  number={4415},
+  pages={1136--1137},
+  year={1954},
+  publisher={Nature Publishing Group}
+}
+
+@incollection{Gramacy2010,
+abstract = {Optimization of complex functions, such as the output of computer simulators, is a difficult task that has received much attention in the literature. A less studied problem is that of optimization under unknown constraints, i.e., when the simulator must be invoked both to determine the typical real‐valued response and to determine if a constraint has been violated, either for physical or policy reasons. We develop a statistical approach based on Gaussian processes and Bayesian learning to both approximate the unknown function and estimate the probability of meeting the constraints. A new integrated improvement criterion is proposed to recognize that responses from inputs that violate the constraint may still be informative about the function, and thus could potentially be useful in the optimization. The new criterion is illustrated on synthetic data, and on a motivating optimization problem from health care policy.},
+publisher = {Oxford University Press},
+booktitle = {Bayesian Statistics 9},
+isbn = {0199694583},
+year = {2011},
+title = {Optimization Under Unknown Constraints},
+language = {eng},
+address = {Oxford},
+author = {Gramacy, Robert B and Lee, Herbert K. H},
+}
+
+
+@inproceedings{Rasmussen2003,
+  title={Gaussian processes in machine learning},
+  author={Rasmussen, Carl Edward},
+  booktitle={Summer School on Machine Learning},
+  pages={63--71},
+  year={2003},
+  organization={Springer}
+}
+@book{Rasmussen2006Gpfm,
+series = {Adaptive computation and machine learning},
+publisher = {MIT Press},
+isbn = {9780262182539},
+year = {2006},
+title = {{Gaussian processes for Machine Learning}},
+language = {eng},
+address = {Cambridge, Mass.},
+author = {Rasmussen, Carl Edward and Williams, Christopher K. I.},
+keywords = {Gaussian processes -- Data processing; Machine learning -- Mathematical models},
+lccn = {2005053433},
+}
+
+
+@article{Oyebamiji2019,
+issn = {18777503},
+abstract = {Individual-based (IB) modelling has been widely used for studying the emergence of complex interactions of bacterial biofilms and their environment. We describe the emulation and calibration of an expensive dynamic simulator of an IB model of microbial communities. We used a combination of multivariate dynamic linear models (DLM) and a Gaussian process to estimate the model parameters of our dynamic emulators. The emulators incorporate a smoothly varying and nonstationary trend that is modelled as a deterministic function of explanatory variables while the Gaussian process (GP) is allowed to capture the remaining intrinsic local variations. We applied this emulation strategy for parameter calibration of a newly developed model for simulation of microbial communities against the iDynoMiCS model. The percentage of variance explained for the four outputs biomass concentration, the total number of particles, biofilm average height and surface roughness range between 84—92% and 97–99% for univariate and multivariate emulators respectively. The simulation-based sensitivity analysis identified carbon substrate, oxygen concentration and maximum specific growth rate for heterotrophic bacteria as the most critical variables for predictions. The calibration results also indicated a general reduction of uncertainty levels in most of the parameters. The study has helped us identify the tradeoff in using different types of models for microbial simulation. The approach illustrated here provides a tractable and computationally efficient technique for calibrating the parameters of an expensive computer model.},
+journal = {Journal of Computational Science},
+pages = {194--208},
+volume = {30},
+publisher = {Elsevier B.V.},
+year = {2019},
+title = {Bayesian emulation and calibration of an individual-based model of microbial communities},
+copyright = {Copyright 2019 Elsevier B.V., All rights reserved.},
+author = {Oyebamiji, O.K. and Wilkinson, D.J. and Li, B. and Jayathilake, P.G. and Zuliani, P. and Curtis, T.P.},
+keywords = {Bayesian Model ; Biofilm ; Calibration ; Dynamic Linear Model ; Mcmc},
+}
+@article{oyebamiji2017,
+  title={Gaussian process emulation of an individual-based model simulation of microbial communities},
+  author={Oyebamiji, OK and Wilkinson, Darren J and Jayathilake, PG and Curtis, Thomas P and Rushton, SP and Li, B and Gupta, P},
+  journal={Journal of Computational Science},
+  volume={22},
+  pages={69--84},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@article{Carroll2016,
+author = {Carroll, James and McDonald, Alasdair and McMillan, David},
+title = {Failure rate, repair time and unscheduled {O}\&{M} cost analysis of offshore wind turbines},
+journal = {Wind Energy},
+volume = {19},
+number = {6},
+pages = {1107-1119},
+keywords = {failure mode, failure rate, offshore wind turbine, reliability},
+doi = {10.1002/we.1887},
+
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/we.1887},
+abstract = {Abstract Determining and understanding offshore wind turbine failure rates and resource requirement for repair are vital for modelling and reducing O\&M costs and in turn reducing the cost of energy. While few offshore failure rates have been published in the past even less details on resource requirement for repair exist in the public domain. Based on ~350 offshore wind turbines throughout Europe this paper provides failure rates for the overall wind turbine and its sub-assemblies. It also provides failure rates by year of operation, cost category and failure modes for the components/sub-assemblies that are the highest contributor to the overall failure rate. Repair times, average repair costs and average number of technicians required for repair are also detailed in this paper. An onshore to offshore failure rate comparison is carried out for generators and converters based on this analysis and an analysis carried out in a past publication. The results of this paper will contribute to offshore wind O\&M cost and resource modelling and aid in better decision making for O\&M planners and managers. Copyright © 2015 John Wiley \& Sons, Ltd.},
+year = {2016}
+}
+
+@article{Cevasco2021,
+  title={Reliability, availability, maintainability data review for the identification of trends in offshore wind energy applications},
+  author={Cevasco, D and Koukoura, S and Kolios, AJ},
+  journal={Renewable and Sustainable Energy Reviews},
+  volume={136},
+  pages={110414},
+  year={2021},
+  publisher={Elsevier}
+}
+
+
+@article{Hobley2019,
+  title={Will gas be gone in the {United Kingdom (UK)} by 2050? {An} impact assessment of urban heat decarbonisation and low emission vehicle uptake on future {UK} energy system scenarios},
+  author={Hobley, Alexander},
+  journal={{Renewable Energy}},
+  volume={142},
+  pages={695--705},
+  year={2019},
+  publisher={Elsevier}
+}
+
+@article{Farrow2009,
+  title={Almost-Pareto decision sets in imprecise utility hierarchies},
+  author={Farrow, Malcolm and Goldstein, Michael},
+  journal={Journal of Statistical Theory and Practice},
+  volume={3},
+  number={1},
+  pages={137--155},
+  year={2009},
+  publisher={Springer}
+}
+
+@article{Farrow2010,
+  title={Sensitivity of decisions with imprecise utility trade-off parameters using boundary linear utility},
+  author={Farrow, Malcolm and Goldstein, Michael},
+  journal={International journal of approximate reasoning},
+  volume={51},
+  number={9},
+  pages={1100--1113},
+  year={2010},
+  publisher={Elsevier}
+}
+
+
+@article{Gramacy2008,
+  title={Bayesian treed {G}aussian process models with an application to computer modeling},
+  author={Gramacy, Robert B and Lee, Herbert K H},
+  journal={Journal of the American Statistical Association},
+  volume={103},
+  number={483},
+  pages={1119--1130},
+  year={2008},
+  publisher={Taylor \& Francis}
+}
+
+
+@book{Gramacy2020surrogates,
+  title = {Surrogates: {G}aussian Process Modeling, Design and Optimization for the Applied Sciences},
+  author = {Robert B. Gramacy},
+  publisher = {Chapman Hall/CRC},
+  address = {Boca Raton, Florida},
+  year = {2020},
+  url = {http://bobby.gramacy.com/surrogates/}
+}
+
+@article{Baker2020a,
+title={Predicting the output from a stochastic computer model when a deterministic approximation is available},
+  author={Baker, Evan and Challenor, Peter and Eames, Matt},
+  journal={Journal of Computational and Graphical Statistics},
+  volume={29},
+  number={4},
+  pages={786--797},
+  year={2020},
+  publisher={Taylor \& Francis}
+}
+@inproceedings{Owen2020,
+  title={A {B}ayesian Statistical Approach to Decision Support for {TNO OLYMPUS} Well Control Optimisation under Uncertainty},
+  author={Owen, J and Vernon, I and Hammersley, R},
+  booktitle={ECMOR XVII},
+  number={1},
+  pages={1--27},
+  year={2020},
+  organization={European Association of Geoscientists \& Engineers}
+}
+
+
+@article{Baggaley2012,
+ ISSN = {19326157, 19417330},
+ URL = {http://www.jstor.org/stable/41713478},
+ abstract = {We consider parameter estimation for the spread of the Neolithic incipient farming across Europe using radiocarbon dates. We model the arrival time of farming at radiocarbon-dated, early Neolithic sites by a numerical solution to an advancing wavefront. We allow for (technical) uncertainty in the radiocarbon data, lack-of-fit of the deterministic model and use a Gaussian process to smooth spatial deviations from the model. Inference for the parameters in the wavefront model is complicated by the computational cost required to produce a single numerical solution. We therefore employ Gaussian process emulators for the arrival time of the advancing wavefront at each radiocarbon-dated site. We validate our model using predictive simulations.},
+ author = {Andrew W. Baggaley and Richard J. Boys and Andrew Golightly and Graeme R. Sarson and Anvar Shukurov},
+ journal = {The Annals of Applied Statistics},
+ number = {4},
+ pages = {1352--1376},
+ publisher = {Institute of Mathematical Statistics},
+ title = {INFERENCE FOR POPULATION DYNAMICS IN THE {N}EOLITHIC PERIOD},
+ volume = {6},
+ year = {2012}
+}
+
+
+@article{Baker2020,
+  title={Analyzing stochastic computer models: A review with opportunities},
+  author={Baker, Evan and Barbillon, Pierre and Fadikar, Arindam and Gramacy, Robert B and Herbei, Radu and Higdon, David and Huang, Jiangeng and Johnson, Leah R and Ma, Pulong and Mondal, Anirban and Pires, Bianica and Sacks, Jerome and Sokolov, Vadim},
+  journal={arXiv preprint arXiv:2002.01321},
+  year={2020}
+}
+
+
+@article{Gramacy2011,
+  title={Particle learning of {G}aussian process models for sequential design and optimization},
+  author={Gramacy, Robert B and Polson, Nicholas G},
+  journal={Journal of Computational and Graphical Statistics},
+  volume={20},
+  number={1},
+  pages={102--118},
+  year={2011},
+  publisher={Taylor \& Francis}
+}
+
+@article{Ramamohanarao2017,
+  title={Smarts: Scalable microscopic adaptive road traffic simulator},
+  author={Ramamohanarao, Kotagiri and Xie, Hairuo and Kulik, Lars and Karunasekera, Shanika and Tanin, Egemen and Zhang, Rui and Khunayn, Eman Bin},
+  journal={ACM Transactions on Intelligent Systems and Technology (TIST)},
+  volume={8},
+  number={2},
+  pages={26},
+  year={2017},
+  publisher={ACM}
+}
+@incollection{Montibeller2018,
+  title={Individual and group biases in value and uncertainty judgments},
+  author={Montibeller, Gilberto and von Winterfeldt, Detlof},
+  booktitle={Elicitation},
+  pages={377--392},
+  year={2018},
+  publisher={Springer}
+}
+@book{Gentle2007,
+series = {Springer texts in statistics},
+publisher = {Springer},
+isbn = {9780387708737},
+year = {2007},
+title = {{Matrix Algebra Theory, Computations, and Applications in Statistics}},
+language = {eng},
+address = {New York, N.Y. ; [London]},
+author = {Gentle, James E.},
+keywords = {Problems, exercises, etc; Electronic books},
+}
+@article{Wand2002,
+  title={Vector differential calculus in statistics},
+  author={Wand, MP},
+  journal={The American Statistician},
+  volume={56},
+  number={1},
+  pages={55--62},
+  year={2002},
+  publisher={Taylor \& Francis}
+}
+
+@book{Deisenroth2020,
+  title={Mathematics for Machine Learning},
+  author={Deisenroth, Marc Peter and Faisal, A Aldo and Ong, Cheng Soon},
+  year={2020},
+  publisher={Cambridge University Press}
+}
+@inproceedings{Bertelsen1997,
+  title={Just-in-time logistics in the supply of building materials},
+  author={Bertelsen, Sven and Nielsen, Jorgen},
+  booktitle={1st International Conference on Construction Industry Development, Singapore},
+  pages={9--11},
+  year={1997},
+  organization={Citeseer}
+}
+
+
+@inproceedings{JamesWilson2018,
+    author = {Wilson, James T. and Hutter, Frank and Deisenroth, Marc Peter},
+    title = {{Maximizing Acquisition Functions for Bayesian Optimization}},
+    year = {2018},
+    publisher = {Curran Associates Inc.},
+    address = {Red Hook, NY, USA},
+    abstract = {Bayesian optimization is a sample-efficient approach to global optimization that relies on theoretically motivated value heuristics (acquisition functions) to guide its search process. Fully maximizing acquisition functions produces the Bayes' decision rule, but this ideal is difficult to achieve since these functions are frequently non-trivial to optimize. This statement is especially true when evaluating queries in parallel, where acquisition functions are routinely non-convex, high-dimensional, and intractable. We first show that acquisition functions estimated via Monte Carlo integration are consistently amenable to gradient-based optimization. Subsequently, we identify a common family of acquisition functions, including EI and UCB, whose properties not only facilitate but justify use of greedy approaches for their maximization.},
+    booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems},
+    pages = {9906–9917},
+    numpages = {12},
+    location = {Montr\'{e}al, Canada},
+    series = {NIPS'18}
+    }
+
+
+
+
+
+@INPROCEEDINGS{Habibi2019,
+author={ M. {Habibi} and V. {Vahidinasab} and A. {Allahham} and D. {Giaouris} and S. {Walker} and P. {Taylor} },
+booktitle={2019 IEEE 28th International Symposium on Industrial Electronics (ISIE)},
+title={Coordinated Storage and Flexible Loads as a Network Service Provider: a Resilience-Oriented Paradigm},
+year={2019},
+volume={},
+number={},
+pages={58-63},
+keywords={energy storage;power generation dispatch;power generation economics;power generation scheduling;stochastic processes;wind power plants;IEEE RTS-24 standard network;coordinated ancillary services;ESSs proactive role;network service provider;resilience-oriented paradigm;resilience-oriented operation multitime scale scheduling;proactive operation strategy;intermittent wind generations;load supplying resilience;energy storage systems;sub-hourly fine-tuning periods;critical loads;stochastic unit commitment model;short-term scheduling;coordinated storage and flexible loads;CSFLs;SoC;wind energy curtailment;Load modeling;Wind power generation;Uncertainty;Fluctuations;Generators;Wind energy;Stochastic processes;Network Service provider;Multi-time scale scheduling;coordinated ESSs and flexible loads;Resilience;wind energy fluctuations;stochastic unit commitment},
+doi={10.1109/ISIE.2019.8781282},
+ISSN={},
+month={June}
+}
+
+@article{Silverman1985,
+  title={Some aspects of the spline smoothing approach to non-parametric regression curve fitting},
+  author={Silverman, Bernhard W},
+  journal={Journal of the Royal Statistical Society: Series B (Methodological)},
+  volume={47},
+  number={1},
+  pages={1--21},
+  year={1985},
+  publisher={Wiley Online Library}
+}
+
+
+@article{Maclachlan2015,
+issn = {0035-9009},
+abstract = {This article describes the UK Met Office Global Seasonal forecast system version 5 (GloSea5). GloSea5 upgrades include an increase in horizontal resolution in the atmosphere (N216–0.7°) and the ocean (0.25°), and implementation of a 3D‐Var assimilation system for ocean and sea‐ice conditions. GloSea5 shows improved year‐to‐year predictions of the major modes of variability. In the Tropics, predictions of the El Niño–Southern Oscillation are improved with reduced errors in the West Pacific. In the Extratropics, GloSea5 shows unprecedented levels of forecast skill and reliability for both the North Atlantic Oscillation and the Arctic Oscillation. We also find useful levels of skill for the western North Pacific Subtropical High which largely determines summer precipitation over East Asia.},
+journal = {Quarterly Journal of the Royal Meteorological Society},
+pages = {1072--1084},
+volume = {141},
+publisher = {John Wiley & Sons, Ltd},
+number = {689},
+year = {2015},
+title = {Global Seasonal forecast system version 5 (GloSea5): a high‐resolution seasonal forecast system},
+language = {eng},
+address = {Chichester, UK},
+author = {Maclachlan, C. and Arribas, A. and Peterson, K. A. and Maidens, A. and Fereday, D. and Scaife, A. A. and Gordon, M. and Vellinga, M. and Williams, A. and Comer, R. E. and Camp, J. and Xavier, P. and Madec, G.},
+keywords = {Seasonal Forecasting ; Ensembles ; Arctic Oscillation ; Enso ; Wnpsth ; Mjo},
+}
+
+
+@book{Cioffi2014,
+  title={Introduction to {C}omputational {S}ocial {S}cience},
+  author={Cioffi-Revilla, Claudio},
+  year={2014},
+  publisher={Springer}
+}
+
+@article{Nelson1980,
+  title={Accelerated life testing-step-stress models and data analyses},
+  author={Nelson, Wayne},
+  journal={IEEE Transactions on Reliability},
+  volume={29},
+  number={2},
+  pages={103--108},
+  year={1980},
+  publisher={IEEE}
+}
+
+
+@article{Andrianakis2012,
+issn = {0167-9473},
+abstract = {The effect of a Gaussian process parameter known as the nugget, on the development of computer model emulators is investigated. The presence of the nugget results in an emulator that does not interpolate the data and attaches a non-zero uncertainty bound around them. The limits of this approximation are investigated theoretically, and it is shown that they can be as large as those of a least squares model with the same regression functions as the emulator, regardless of the nugget’s value. The likelihood of the correlation function parameters is also studied and two mode types are identified. Type I modes are characterised by an approximation error that is a function of the nugget and can therefore become arbitrarily small, effectively yielding an interpolating emulator. Type II modes result in emulators with a constant approximation error. Apart from a theoretical investigation of the limits of the approximation error, a practical method for automatically imposing restrictions on its extent is introduced. This is achieved by means of a penalty term that is added to the likelihood function, and controls the amount of unexplainable variability in the computer model. The main findings are illustrated on data from an Energy Balance climate model.},
+journal = {Computational Statistics and Data Analysis},
+pages = {4215--4228},
+volume = {56},
+publisher = {Elsevier B.V.},
+number = {12},
+year = {2012},
+title = {The effect of the nugget on {G}aussian process emulators of computer models},
+language = {eng},
+author = {Andrianakis, Ioannis and Challenor, Peter G.},
+keywords = {Computer Experiments ; Ill Conditioning ; Interpolation ; Approximation ; Kriging},
+}
+@article{Bayarri2007,
+issn = {0040-1706},
+abstract = {We present a framework that enables computer model evaluation oriented toward answering the question: Does the computer model adequately represent reality? The proposed validation framework is a six-step procedure based on Bayesian and likelihood methodology. The Bayesian methodology is particularly well suited to treating the major issues associated with the validation process: quantifying multiple sources of error and uncertainty in computer models, combining multiple sources of information, and updating validation assessments as new information is acquired. Moreover, it allows inferential statements to be made about predictive error associated with model predictions in untested situations. The framework is implemented in a test bed example of resistance spot welding, to provide context for each of the six steps in the proposed validation process.},
+journal = {Technometrics},
+pages = {138--154},
+volume = {49},
+publisher = {Taylor & Francis},
+number = {2},
+year = {2007},
+title = {A Framework for Validation of Computer Models},
+language = {eng},
+author = {Bayarri, Maria J and Berger, James O and Paulo, Rui and Sacks, Jerry and Cafeo, John A and Cavendish, James and Lin, Chin-Hsu and Tu, Jian},
+keywords = {Bayesian Analysis ; Identifiability ; Model Discrepancy ; Prediction},
+}
+
+@article{Brynjarsdottir2014,
+  title={Learning about physical parameters: The importance of model discrepancy},
+  author={Brynjarsd{\'o}ttir, Jenn{\'y} and O'Hagan, Anthony},
+  journal={Inverse problems},
+  volume={30},
+  number={11},
+  pages={114007},
+  year={2014},
+  publisher={IOP Publishing}
+}
+
+
+@article{oakley2002a,
+  title={Bayesian inference for the uncertainty distribution of computer model outputs},
+  author={Oakley, Jeremy and O'Hagan, Anthony},
+  journal={Biometrika},
+  volume={89},
+  number={4},
+  pages={769--784},
+  year={2002},
+  publisher={Oxford University Press}
+}
+
+@article{Ohagan2006,
+  title={Bayesian analysis of computer code outputs: A tutorial},
+  author={O'Hagan, Anthony},
+  journal={Reliability Engineering \& System Safety},
+  volume={91},
+  number={10-11},
+  pages={1290--1300},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@incollection{ElicitationBook,
+  title={Elicitation: State of the art and science},
+  author={Dias, Luis C and Morton, Alec and Quigley, John},
+  booktitle={Elicitation},
+  pages={1--14},
+  year={2018},
+  publisher={Springer}
+}
+
+@incollection{Morton2018,
+  title={Multiattribute value elicitation},
+  author={Morton, Alec},
+  booktitle={Elicitation},
+  pages={287--311},
+  year={2018},
+  publisher={Springer}
+}
+
+
+
+@article{Wilson2018,
+  title={Emulation of utility functions over a set of permutations: sequencing reliability growth tasks},
+  author={Wilson, Kevin J and Henderson, Daniel A and Quigley, John},
+  journal={Technometrics},
+  volume={60},
+  number={3},
+  pages={273--285},
+  year={2018},
+  publisher={Taylor \& Francis}
+}
+
+@incollection{Benter1994,
+  title={Computer based horse race handicapping and wagering systems: a report},
+  author={Benter, William},
+  booktitle={Efficiency of Racetrack Betting Markets},
+  pages={183--198},
+  year={1994},
+  publisher={World Scientific}
+}
+
+
+@article{Wang02,
+issn = {0951-8320},
+abstract = {In this paper, a general form of bathtub shape hazard rate function is proposed in terms of reliability. The degradation of system reliability comes from different failure mechanisms, in particular those related to (1) random failures, (2) cumulative damage, (3) man–machine interference, and (4) adaptation. The first item is referred to the modeling of unpredictable failures in a Poisson process, i.e. it is shown by a constant. Cumulative damage emphasizes the failures owing to strength deterioration and therefore the possibility of system sustaining the normal operation load decreases with time. It depends on the failure probability, 1− R . This representation denotes the memory characteristics of the second failure cause. Man–machine interference may lead to a positive effect in the failure rate due to learning and correction, or negative from the consequence of human inappropriate habit in system operations, etc. It is suggested that this item is correlated to the reliability, R , as well as the failure probability. Adaptation concerns with continuous adjusting between the mating subsystems. When a new system is set on duty, some hidden defects are explored and disappeared eventually. Therefore, the reliability decays combined with decreasing failure rate, which is expressed as a power of reliability. Each of these phenomena brings about the failures independently and is described by an additive term in the hazard rate function h ( R ), thus the overall failure behavior governed by a number of parameters is found by fitting the evidence data. The proposed model is meaningful in capturing the physical phenomena occurring during the system lifetime and provides for simpler and more effective parameter fitting than the usually adopted ‘bathtub’ procedures. Five examples of different type of failure mechanisms are taken in the validation of the proposed model. Satisfactory results are found from the comparisons.},
+year = {2002},
+journal = {Reliability Engineering and System Safety},
+pages = {397--406},
+volume = {75},
+publisher = {Elsevier Ltd},
+number = {3},
+title = {Modeling the bathtub shape hazard rate function in terms of reliability},
+language = {eng},
+author = {Wang, K.S. and Hsu, F.S. and Liu, P.P.},
+keywords = {Dynamic Reliability ; Bathtub Curve ; Hazard Rate},
+}
+@article{Akenman2010,
+ title={Stochastic {K}riging for simulation metamodeling},
+  author={Ankenman, Bruce and Nelson, Barry L and Staum, Jeremy},
+  journal={Operations Research},
+  volume={58},
+  number={2},
+  pages={371--382},
+  year={2010},
+  publisher={INFORMS}
+}
+@book{Kosten1973,
+series = {International series of monographs in pure and applied mathematics, v. 103},
+publisher = {Pergamon Press},
+isbn = {0080169481},
+year = {1973},
+title = {Stochastic theory of service systems,},
+edition = {[1st ed.].},
+language = {eng},
+address = {Oxford, New York},
+author = {Kosten, Leendert},
+keywords = {Queuing theory; Stochastic processes},
+lccn = {72010124},
+}
+
+@article{Conti2009,
+  title={Gaussian process emulation of dynamic computer codes},
+  author={Conti, Stefano and Gosling, John Paul and Oakley, Jeremy E and O'Hagan, Anthony},
+  journal={Biometrika},
+  volume={96},
+  number={3},
+  pages={663--676},
+  year={2009},
+  publisher={Oxford University Press}
+}
+
+@article{Conti2010,
+  title={Bayesian emulation of complex multi-output and dynamic computer models},
+  author={Conti, Stefano and {O'Hagan}, Anthony},
+  journal={Journal of statistical planning and inference},
+  volume={140},
+  number={3},
+  pages={640--651},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{Barton2006,
+  title={Metamodel-based simulation optimization},
+  author={Barton, Russell R and Meckesheimer, Martin},
+  journal={Handbooks in Operations Research and Management Science},
+  volume={13},
+  pages={535--574},
+  year={2006},
+  publisher={Elsevier}
+}
+
+
+@article{Tripathy2018,
+  title={Deep UQ: Learning deep neural network surrogate models for high dimensional uncertainty quantification},
+  author={Tripathy, Rohit K and Bilionis, Ilias},
+  journal={Journal of Computational Physics},
+  volume={375},
+  pages={565--588},
+  year={2018},
+  publisher={Elsevier}
+}
+
+
+@article{Jackson2019,
+  title={Bayes Linear Emulation of Simulator Networks},
+  author={Jackson, Samuel E and Woods, David C},
+  journal={arXiv preprint arXiv:1910.08003},
+  year={2019}
+}
+
+@article{Kennedy2000,
+issn = {0006-3444},
+abstract = {We consider prediction and uncertainty analysis for complex computer codes which can be run at different levels of sophistication. In particular, we wish to improve efficiency by combining expensive runs of the most complex versions of the code with relatively cheap runs from one or more simpler approximations. A Bayesian approach is described in which prior beliefs about the codes are represented in terms of Gaussian processes. An example is presented using two versions of an oil reservoir simulator.},
+journal = {Biometrika},
+pages = {1--13},
+volume = {87},
+publisher = {Oxford University Press},
+number = {1},
+year = {2000},
+title = {Predicting the output from a complex computer code when fast approximations are available},
+author = {Kennedy, MC and O'Hagan, A},
+keywords = {Bayesian Uncertainty Analysis; Computer Experiment; Gaussian Process; Multi-level Code.}
+}
+
+@article{Le2014,
+  title={Recursive co-{K}riging model for design of computer experiments with multiple levels of fidelity},
+  author={{Le Gratiet}, Loic and Garnier, Josselin},
+  journal={International Journal for Uncertainty Quantification},
+  volume={4},
+  number={5},
+  year={2014},
+  publisher={Begel House Inc.}
+}
+
+
+@article{Baker2020c,
+  title={Future proofing a building design using history matching inspired level-set techniques},
+  author={Baker, Evan and Challenor, Peter and Eames, Matt},
+  journal={Journal of the Royal Statistical Society: Series C (Applied Statistics)},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+
+@article{Challenor2013,
+  title={Experimental design for the validation of {K}riging metamodels in computer experiments},
+  author={Challenor, P},
+  journal={Journal of Simulation},
+  volume={7},
+  number={4},
+  pages={290--296},
+  year={2013},
+  publisher={Taylor \& Francis}
+}
+
+
+@misc{Karyotakis11,
+abstract = {This thesis reports on investigations undertaken into the reliability, availability and maintenance of offshore wind farms when considering different maintenance strategies, an understanding of which is fundamental when considering the technical and economical viability of existing and future offshore wind farms. A comprehensive literature review has been undertaken in the areas of offshore wind farm maintenance strategies, offshore wind turbine reliability and accessibility issues, and CO2 emissions associated with maintenance expeditions for offshore wind farms. The limitations and disadvantages of current maintenance practices are identified and a planned intervention maintenance policy is proposed and examined in detail. To help design a planned intervention maintenance policy, the offshore wind farm parameters that affect its technical and economical viability have been identified, which become the foundation for developing computer based models using Monte Carlo simulations to quantify the maintenance practices of the planned intervention maintenance policy. Different scenarios of the proposed solution are investigated to help quantify the technical and economical benefits over the current maintenance practises, in terms of wind farm availability, cumulative energy output, production cost of energy and CO2 emissions. The research on the reliability of offshore wind turbines has shown that the power converter system is a critical item that suffers from high failure rates. This thesis reports upon the investigation of a hot standby redundancy on the wind turbine power converter system. A redundancy model is deployed to simulate the planned intervention maintenance policy for different offshore wind farm case studies in order to establish the effects of the hot standby redundancy on the offshore wind turbine operational performance. The novel contribution of this work is claimed to be in the development of dedicated models for the reliability, availability and maintenance of offshore wind farms, which should lead in establishing a technical and economic benchmark for the parameters affecting offshore wind farms.},
+year = {2011},
+journal = {Doctoral thesis},
+publisher = {UCL (University College London)},
+title = {On the optimisation of operation and maintenance strategies for offshore wind farms},
+language = {eng},
+author = {Karyotakis, A.},
+url = {http://discovery.ucl.ac.uk/1302066/1/1302066.pdf},
+}
+
+@article{Rios2003,
+  title={A multiattribute decision support system with imprecise input and time-dependent modelling},
+  author={R{\'\i}os Insua, Sixto and Jim{\'e}nez Mart{\'\i}n, Antonio and Mateos Caballero, Alfonso and Prieto Romeau, Tom{\'a}s},
+  journal={International Journal of Technology, Policy and Management},
+  volume={3},
+  number={3/4},
+  pages={230--250},
+  year={2003},
+  publisher={Inderscience Publishers}
+}
+
+
+
+@Misc{stan,
+    title = {{RStan}: the {R} interface to {Stan}},
+    author = {{Stan Development Team}},
+    note = {R package version 2.21.2},
+    year = {2020},
+    url = {http://mc-stan.org/},
+  }
+
+@article{Mckay1979,
+issn = {0040-1706},
+abstract = {Two types of sampling plans are examined as alternatives to simple random sampling in Monte Carlo studies. These plans are shown to be improvements over simple random sampling with respect to variance for a class of estimators which includes the sample mean and the empirical distribution function.},
+journal = {Technometrics},
+pages = {239--245},
+volume = {21},
+publisher = {Taylor & Francis Group},
+number = {2},
+year = {1979},
+title = {Comparison of Three Methods for Selecting Values of Input Variables in the Analysis of Output from a Computer Code},
+author = {{McKay}, M. D. and Beckman, R. J. and Conover, W. J.},
+keywords = {Latin Hypercube Sampling ; Sampling Techniques ; Simulation Techniques ; Variance Reduction}
+}
+@article{Stein1991,
+  title={Universal {K}riging and cokriging as a regression procedure},
+  author={Stein, A and Corsten, LCA},
+  journal={Biometrics},
+  pages={575--587},
+  year={1991},
+  publisher={JSTOR}
+}
+
+
+@incollection{Seo2000,
+  title={Gaussian process regression: Active data selection and test point rejection},
+  author={Seo, Sambu and Wallat, Marko and Graepel, Thore and Obermayer, Klaus},
+  booktitle={Mustererkennung 2000},
+  pages={27--34},
+  year={2000},
+  publisher={Springer}
+}
+@article{Zit2021,
+  title={Modeling Epistemic Uncertainty in Offshore Wind Farm Production Capacity to Reduce Risk},
+  author={Zitrou, Athena and Bedford, Tim and Walls, Lesley},
+  journal={Risk Analysis},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+@article{Zit2021,
+  title={Modeling Epistemic Uncertainty in Offshore Wind Farm Production Capacity to Reduce Risk},
+  author={Zitrou, Athena and Bedford, Tim and Walls, Lesley},
+  journal={Risk Analysis},
+  volume={42},
+  number={7},
+  pages={1524--1540},
+  year={2022},
+  publisher={Wiley Online Library}
+}
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The following are examples. I doubt I would ever need to reference these things.
+
+
+Define some strings for Journal names.
+@STRING(AA = "Astron.~Astrophys.")
+@STRING(ACP = "Annales de Chimie et de Physique")
+@STRING(AJ = "Astrophys.~J.")
+@STRING(EJMBF = "Eur.~J.~Mech.,~B/Fluids")
+@STRING(FDR = "Fluid Dyn.~Res.")
+@STRING(JCP = "J.~Comput.~Phys.")
+@STRING(JETP = "J~.Exptl.~Theoret.~Phys.~(U.~S.~S.~R.)")
+@STRING(JFM = "J.~Fluid Mech.")
+@STRING(JPA = "J.~Phys.~A: Math.~Gen.")
+@STRING(MPCPS = "Math.~Proc.~Camb.~Phil.~Soc.")
+@STRING(PCPS = "Proc.~Cambridge Phil.~Soc.")
+@STRING(PD = "Physica D")
+@STRING(PF = "Phys.~Fluids")
+@STRING(PLA = "Phys.~Lett.~A")
+@STRING(PRA = "Phys.~Rev.~A")
+@STRING(PRE = "Phys.~Rev.~E")
+@STRING(PRL = "Phys.~Rev.~Lett.")
+@STRING(PRSLA = "Proc.~R.~Soc.~Lond.~A")
+@STRING(TCFD = "Theor.~Comput.~Fluid Dyn.")
+
+@MISC{Ahl87,
+   author = "G.~Ahlers",
+   year = "1987",
+   note = "Private communication to C.~F.~Barenghi"
+}
+
+@ARTICLE{Bar91,
+   author = "C.~F.~Barenghi",
+   year = "1991",
+   title = "Computations of transitions and {Taylor} vortices in temporally
+     modulated {Taylor}--{Couette} flow",
+   journal = JCP,
+   volume = "95",
+   pages = "175--194"
+}
+
+@BOOK{Cha61,
+   author = "S.~Chandrasekhar",
+   year = "1961",
+   title = "Hydrodynamic and hydromagnetic stability",
+   publisher = "Clarendon",
+}
+
+@ARTICLE{Don64,
+   author = "R.~J.~Donnelly",
+   year = "1964",
+   title = "Experiments of the stability of viscous flows between rotating
+     cylinders. {III}. {Enhancement} of stability by modulation",
+   journal = PRSLA,
+   volume = "281",
+   pages = "130--139"
+}
+
+@ARTICLE{Cou90,
+   author = "M.~F.~A.~Couette",
+   year = "1890",
+   title = "{\'Etudes} sur le frottement des liquides",
+   journal = ACP,
+   volume = "21",
+   pages = "433--510"
+}
+
+@INPROCEEDINGS{Kel77,
+   author = "H.~B.~Keller",
+   year    = "1977",
+   title = "Numerical solution of bifurcation and nonlinear eigenvalue problems",
+   booktitle = "Applications of bifurcation theory",
+   editor = "P.~Rabinowitz",
+   publisher = "Academic Press, New York",
+   pages = "359",
+}
+
+@MISC{Len88,
+   author = "B.~Lensch",
+   year = "1988",
+   title = "{{\"U}ber} die dynamik der {einwirbelstr{\"o}mung} im
+   {Taylor}-{Zylinder}",
+   note = "Diplomarbeit, University of Kiel, Germany"
+}
+
+@ARTICLE{RS02,
+   author = "G.~{R\"udiger} and D.~Shalybkov",
+   year = "2002",
+   title = "Stability of axisymmetric {Taylor}--{Couette} flow in
+     hydromagnetics",
+   journal = PRE,
+   volume = "66",
+   pages = "016307"
+}
+
+@BOOK{SLUG97,
+   author = "L.~S.~Blackford and J.~Choi and A.~Cleary and E.~D'Azevedo and
+     J.~Demme and I.~Dhillon and J.~Dongarra and S.~Hammarling and G.~Henry and
+     A.~Petitet and K.~Stanley and D.~Walker and R.~C.~Whaley",
+   year = "1997",
+   title = "{ScaLAPACK} Users' Guide",
+   publisher = "Society for Industrial and Applied Mathematics",
+   address = "Philadelphia, PA",
+   ISBN = "0-89871-397-8 (paperback)"
+}
+
+@ARTICLE{Tay23,
+   author = "G.~I.~Taylor",
+   year = "1923",
+   title = "Stability of a viscous liquid contained between two rotating
+     cylinders",
+   journal = PRSLA,
+   volume = "223",
+   pages = "289--343"
+}
+
+@ARTICLE{YB05b,
+   author = "A.~J.~Youd and C.~F.~Barenghi",
+   year = "2005",
+   title = "Reversing and non-reversing modulated {Taylor}--{Couette} flow at
+     finite aspect ratio.",
+   journal = PRE,
+   volume = "72",
+   pages = "056321"
+}
+
+@article{Wang2018,
+  title={Using history matching for prior choice},
+  author={Wang, Xueou and Nott, David J and Drovandi, Christopher C and Mengersen, Kerrie and Evans, Michael},
+  journal={Technometrics},
+  volume={60},
+  number={4},
+  pages={445--460},
+  year={2018},
+  publisher={Taylor \& Francis}
+}
+
+@article{Dalal2022,
+  title={Understanding current {UK} practice for the incidental identification of vertebral fragility fractures from {CT} scans: an expert elicitation study},
+  author={Dalal, Garima and Bromiley, Paul A and Kariki, Eleni P and Luetchens, Shawn and Cootes, Timothy F and Payne, Katherine},
+  journal={Aging Clinical and Experimental Research},
+  pages={1--10},
+  year={2022},
+  publisher={Springer}
+}
+
+@article{Syed2020,
+  title={A novel tool for {B}ayesian reliability analysis using {AHP} as a framework for prior elicitation},
+  author={Syed, Zaki and Shabarchin, Oleg and Lawryshyn, Yuri},
+  journal={Journal of Loss Prevention in the Process Industries},
+  volume={64},
+  pages={104024},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{Ohagan2012,
+  title={Probabilistic uncertainty specification: Overview, elaboration techniques and their application to a mechanistic model of carbon flux},
+  author={O’Hagan, Anthony},
+  journal={Environmental Modelling \& Software},
+  volume={36},
+  pages={35--48},
+  year={2012},
+  publisher={Elsevier}
+}

@@ -1,0 +1,6 @@
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Point estimation of $S_i$\relax }}{106}{algorithm.1}%
+\contentsline {algorithm}{\numberline {2}{\ignorespaces A single iteration of a generic, component-wise slice sampler, based upon the slice sampler presented by \citet {Neal2003}. \relax }}{150}{algorithm.2}%
+\contentsline {algorithm}{\numberline {3}{\ignorespaces A single iteration of a component-wise slice sampler used for sampling from NROY regions, based upon the slice sampler presented by \citet {Andrianakis2017a}. \relax }}{150}{algorithm.3}%
+\contentsline {algorithm}{\numberline {4}{\ignorespaces An ergodic variant of \cref {alg:nroy-slice}. \relax }}{151}{algorithm.4}%
+\contentsline {algorithm}{\numberline {5}{\ignorespaces A single sweep of a component-wise slice sampler for generating NROY samples within the discrete simplex. \relax }}{174}{algorithm.5}%
+\contentsline {algorithm}{\numberline {6}{\ignorespaces An ergodic algorithm for simulating uniformly on of $\mathcal {S}^n_q \times [0, 1]^p$. \relax }}{175}{algorithm.6}%

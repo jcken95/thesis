@@ -1,0 +1,160 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ %%
+
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[capitalise, noabbrev]{cleveref}
+\usepackage{booktabs}
+\usepackage{cleveref}
+\usepackage{float}
+
+%% macros %%
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\calX}{\mathcal{X}} 
+\newcommand{\bx}{\textbf{x}}
+\newcommand{\bz}{\textbf{z}}
+\newcommand{\E}{\text{E}}
+\newcommand{\cov}{\text{Cov}}
+\newcommand{\var}{\text{Var}}
+\newcommand{\pr}{\text{P}}
+\newcommand{\diag}{\text{diag}}
+\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+    \def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\newcommand{\dd}{\text{d}}
+\newcommand{\secref}[1]{Section \ref{#1}}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows}
+%%
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{amsmath}
+
+%%
+\begin{document}
+%
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+%
+%\renewcommand{\qedsymbol}{\filledbox}
+%
+\title{Global Sensitivity Analysis of Stochastic Computer Models with Heteroscedastic GPs}%replace X with the appropriate number
+\author{Jack Kennedy} %if necessary, replace with your course title
+% 
+\maketitle
+
+\section{Intro}
+
+Here we aim to recreate the results of \citet{Marrel2012} using a Gaussian Process (GP) in place of the ``true'' model. Our GP model will be a Bayesian version of HetGP.\\
+
+We aim to compute several sensitivity indices in this report. We will also explain some of the algorithms provided by \citet{Sobol1993}. Our focus here will be to estimate sensitivity indices of the Ishigami function; $f(x) = f(x_1, x_2, x_3) = \sin(x_1) + 7 \sin^2(x_2) + 0.1 x_3^2 \sin(x_1)$. Where each $x_i \in [-\pi, \pi]$. \\
+
+However, the Ishigami function is clearly deterministic, hence we modify it to produce a new function; $f(x, x_\varepsilon) = \sin(x_1) + 7 \sin^2(x_2) + 0.1 x_\varepsilon^2 \sin(x_1)$, with $x_\varepsilon \sim U(-\pi, \pi)$. Although the Ishigami function is simple to compute, in practice we will be working with much more complex systems which will be too expensive for a standard Monte Carlo sensitivity analysis. Hence, we will later replace $f$ by an estimate $\hat{f}$ which will be a GP emulator.\\
+
+Integrating out $x_\varepsilon$ gives us the mean function for our stochastic Ishigami function;
+
+\begin{equation}
+	Y_m(x) = \E(Y| x) = \left( 1 + \frac{\pi^4}{50} \right) \sin(x_1) + 7\sin^2(x_2).
+\end{equation}
+
+It is also straightforward to find the variance function;
+
+\begin{equation}
+	Y_d(x) = \var(Y|x) = \pi^8 (900^{-1} - 2500^{-1}) \sin^2(x_1).
+\end{equation}
+
+Notice that $Y_d$ only depends on $x_1$.
+
+\section{Sensitivity Indices \& Their Computation}
+
+\subsection{Sensitivity Indices}
+
+Sensitivity indices allow us to determine how important a group of variable are (or a single variable). They come in two forms, but both are variance based. For a model with $p$ inputs there are $2^p - 1$ such indices, and the sum of all of these indices is exactly one.\\
+
+The first is 
+
+\begin{equation}
+	S_i = \frac{\var(Y|X_i)}{\var(Y)}
+\end{equation}
+
+which is the proportion of variance that would be eliminated if we were to learn input(s) $i$.\\
+
+The second type is 
+
+\begin{equation}
+	S_{T_i} = \sum_{J \supseteq i} S_J 
+\end{equation}
+
+which is the total sensitivity to group $i$. For example, in a three parameter problem, the total sensitivity to the first input is
+
+\begin{equation}
+	S_{T_1} = S_1 + S_{12} + S_{13} + S_{123}.
+\end{equation}
+
+A particularly important index is $S_{T_\varepsilon}$; this is the proportion of uncertainty induced by the random seed variable, including the interaction of the seed variable with the simulator's deterministic components.
+\subsection{Computation}
+
+Here we will outline the methods of \citet{Sobol1993} to compute various sensitivity indices for a (stochastic) function $f$. In practice we might replace $f$ by a cheap approximation, $\hat{f}$. We will also have an uncertainty distribution over the inputs. I.e. $x \sim G(x)$, where $G$ is the uncertainty distribution. Further, suppose we can split $x$ into groups $x = (x^1, x^2)$. We can then think about the proportion of variation explained by each group of variables, but a ``group'' might be a single variable (e.g. $x_1$ or $x_\varepsilon$ - uncontrollable variable.\\
+
+We first want to compute the mean value of the mean function, $f_0 = E(Y_m)$
+\begin{align*}
+f_0 & = \int Y_m(x) \dd G(x) \\
+& \approx \frac{1}{N} \sum_{j = 1}^N \hat{Y}_m (x_j)
+\end{align*}
+where N is a large number, $x_j$ are iid samples from $G(x)$ and $\hat{Y}_m$ is an estimate of the mean function of $f$. When we write $x_j$, we will usually mean a sample from $G(x)$.\\
+
+The variance of $Y_m$ (i.e. the uncertainty in $Y_m$ induced by $G(x)$). This is simply
+
+\begin{align}
+	V & = \var(Y_m) \\
+	  & = \int Y_m(x)^2 \dd x - f_0^2 \\
+	  & \approx \frac{1}{N} \sum_{j = 1}^N \hat{Y}_m(x_j)^2 - f_0^2.
+\end{align}
+
+We can find $V_1 = Var(Y | X_1)$ in a similar way:
+
+\begin{align}
+	V & = \var(Y_m|X_1) \\
+	  & = \int Y_m(x_1)^2 \dd x_1 - f_0^2 \\
+	  & \approx \frac{1}{N} \sum_{j = 1}^N \hat{Y}_m(x_1, x_2)\hat{Y}_m(x_1, {x^{2}_j}' ) - f_0^2.
+\end{align}
+Here, $y_j$ is a draw from $G_1(x^1)$, the marginal distribution of $x^1$, and then $x^2_j, {x^{2}_j}'$ are a pair of independent draws from $G_{2|1}(x^2| x^1 = x^2_j)$
+
+\section{Application to The Ishigami Function}
+
+For the Ishigami function we treat $x_3$ as the random input. Based on a training sample of $500$ data points (no replication) we build a HetGP emulator. We obtain the following estimates for sensitivity measures:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ccccc}
+	\toprule
+	& $S_1$ & $S_2$ & $S_{12}$ & $S_{T_3}$ \\ \cmidrule{1-5}
+	Exact Values& $0.314$ & $0.442$ & $0$ & $0.244$ \\
+	Estimates& $0.318$ & $0.461$ & $0.004$ & $0.0.228$\\
+	$|$Percentage Error$|$& $1.27$ & $4.30$ & $-$ & $6.56$ \\\bottomrule
+	\end{tabular}
+\end{table}
+\section{Conclusions}
+
+We see that $S_{T_3} = S_{T_\varepsilon}$ is estimated to be $0.23$, hence, $23\%$  of output uncertainty is due to the stochastic nature of the simulator. We see $\hat{S}_2 = 0.461$ hence a large proportion of output uncertainty is attributied to $x_2$, similarly, a large (but smaller) proportion of the uncertainty is attributed to the variation in $x_1$. We see that $S_{12}$ is small so it is likely that there is a very weak, or possibly a non-existent, interaction between the two controllable inputs. We also see that the proportion of variance explained by the controllable variables is estimated by $1 - \hat{S}_{T_\varepsilon} = 0.772$, hence the controllable variables dominate the output uncertainty.
+%% references 
+
+\newpage
+\bibliography{/home/b4027030/phd/Writing/references}	%References
+\bibliographystyle{agsm}	%BibTeX (.bst) style file
+\end{document}

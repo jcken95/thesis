@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: example-sa.aux
+The style file: agsm.bst
+Database file #1: /home/b4027030/phd/Writing/references.bib
+You've used 4 entries,
+            2909 wiz_defined-function locations,
+            708 strings with 6037 characters,
+and the built_in function-call counts, 18907 in all, are:
+= -- 3051
+> -- 297
+< -- 0
++ -- 1484
+- -- 91
+* -- 1671
+:= -- 3778
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 56
+chr.to.int$ -- 4
+cite$ -- 4
+duplicate$ -- 65
+empty$ -- 140
+format.name$ -- 102
+if$ -- 3386
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 16
+num.names$ -- 43
+pop$ -- 15
+preamble$ -- 1
+purify$ -- 60
+quote$ -- 0
+skip$ -- 52
+stack$ -- 0
+substring$ -- 4345
+swap$ -- 10
+text.length$ -- 56
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 90
+width$ -- 0
+write$ -- 57

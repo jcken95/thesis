@@ -1,0 +1,32 @@
+\begin{chapter}{Introduction \label{Ch:Intro}}
+
+\section{Motivation}
+
+Energy systems models, such as models of gas distribution networks or powerplants are
+complex, implemented via a computer code, and have a large number of inputs. Such
+inputs are prone to epistemic uncertainty due to, for instance, new technologies being
+implemented in harsh environments. The Athena simulator present this in the context of a large offshore windfarm \citep{Zit13, Zit16}, the Athena simulator will commonly be referred to in this work; it frequently is the basis of case studies.
+
+Relevant data is not always available for complex projects. Consider the prospect of building a windfarm. We are likely to know a priori where the windfarm will be constructed (or have a list of condidate locations). We are also likely to have a list of candidate turbines which the windfarm will be composed of, theses turbines may have only been tested in a laboratory and not ``in the wild'', there may also be other novel technologies that we wish to implement in a very harsh environment. There is likely an abundance of data on offshore windfarms out there, however it is not directly relevant to any future offshore windfarm project due to these bespoke issues mentioned. The offshore windfarm that we wish to build is not a random offshore windfarm drawn from the population of offshore windfarms; it is a very particular windfarm. Because of this, we cannot treat is as a random sample from the population; therefore we should not rely on population properties to understand the new offshore windfarm. One approach to this problem is to embrace subjective probability; an expert (or group of experts) should be able to specifiy a joint probability distribution over features of the windfarm relevant to a particular application. This past data can be used to support the experts in formulating a probabiltity distribution, but they are strongly encouraged to bring their own knowledge and experiences to the table.
+
+This (high dimensional) probability distribution will have a number of uses; we will focus on Bayesian decision analysis and probabilistic sensitivity analysis. However, this subjective probability distribution could be used, when relevant data is available, to calibrate the Athena simulator to observational data.
+
+
+
+
+
+
+\section{Gaussian Process Emulators}
+
+Complex computer models are now a standard method to explore scientific understanding in a large range of displines; they are typically implemented as a large copmuter program. Despite modern computing facillities, such simulators are often too expensive to be of practical use. A common approach is such scenarios is to construct some kind of surrogate model which approximates the more complex computer model. To construct the surrogate, the complex model must be run a handful of times to obtain training data; a statistical model is then fit to the data. The model could be a polynomial, a spline or even a neural network. Some of the most sophisticated types of surrogates are known as \textit{emulators}; a special application of Gaussian Process (GP) regression. A comprehensive review of surrograte modelling with an emphasis on GP emulators is given in \citet{Gramacy2020surrogates}.
+
+Increasingly, there has been an uptake in the creation and implementation of stochastic copmuter models; this richer class of models allows us to express uncertainty in our predicitons in a natural, probabilistic format. Despite modern computing facillities, such simulators are often too computationally costly to be of practical use; they are highly complex simulations. This is particularly painful when many thousands of runs are required; for instance, Monte Carlo methods involving the stochastic simulator. E.g. Bayesian inference, probabalistic sensitivity analysis and Bayesian decision support (although there are many other problems!). This work primarily concerns the Athena simulator \citep{Zit13, Zit16}, a stochastic simulator of large offshore windfarms, details of the simulator are discussed below. The simulator was has a large number of uncertain parameters and was developed with decision support in mind; however since the Athena simulator is expensive (one run takes $\sim 20 - 30$ minutes) computer intensive Monte Carlo computations such as maximising expected utilities and computing high dimensional integrals (often expectations and variances of non-trivial functions) takes many thousands of runs of the computer model for accurate evaluation; such analyses are only feasible when replaces with an efficient emulator. With the assistance of an emulator, such tasks can be completed in just a fraction of the time with minimal loss of accuracy \citep{Ohagan01, Oakley04, Ohagan2006}.
+
+A common method to allievate the computational costs associated with the simulator is to replace it with a carefully constructed surrogate model.
+
+\section{The Athena Simulator}
+
+The Athena simultor is a stochastic computer model implemented via MATLAB. The model has a large number of inputs; some of which represent the epistemic uncertainty an expert (or group of experts) might have on key components of a windfarm. A key model output is a time series tracking the windfarm's availability over time. The availability is measuring the amount of energy output by the windfarm as a proportion of it's maximum output. In much of this work the availability time series is compressed into a single value; the average availability. This is the mean availability over the ``early life'' of the windfarm --- the first $5$ years of its operational life (this coincides with the typical warranty period of key windfarm components).
+
+Key model inputs include special components known as ``subassemblies'' of a windfarm. Subassemblies are mechanical components such as gearboxes and generators. These partiuclar components will have a Weibull distribution associated to their expected lifetimes (or a collection of Weibull distributions; see \Cref{Chap:elic-weib}); this is used to express epistemic uncertainty on the lifetime of the component. Different subassemblies have different 
+\end{chapter}

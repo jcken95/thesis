@@ -1,0 +1,26 @@
+
+\begin{center}
+\resizebox{0.4\textwidth}{!}{
+\begin{tikzpicture}[FlowChart,                   % used are styles from tikzset FlowChart
+    node distance = 5mm and 7mm,
+      start chain = A going below                    % The nodes in the chain
+                                                     % will be named by A-1, A-2, ...
+                        ]
+\node   [process] {Identify uncertain model parameters};               % A-1
+\node   [process]   {Identify Experts}; %A-2
+\node   [process]   {Perform initial elicitation. Identify a simple, but appropriate, distribution for each parameter.};%A-3
+\node   [process]   {Construct emulator.};%A-4
+\node   [decision] {Adequate emulator?};%A-5
+\node   [process]   {Use sensitivity analysis to identify key inputs.};%A-6
+\node   [process]   {Revise the elicitation. Give most attention to the most important inputs.};%A-7
+\node   [process]   {Reconstruct emulator in light of refined uncertainty.};%A-8
+\node   [decision] {Adequate emulator?};%A-9
+\node   [process]   {Compute quanitites of interest.};%A-10
+% lines not considered by join macro
+\draw [arrow] (A-5.west) to ["no"] ++ (-1.5,0) |- (A-4);
+\path   (A-5) to ["yes"] (A-6);
+\draw [arrow] (A-9.west) to ["no"] ++ (-1.5,0) |- (A-8);
+\path   (A-9) to ["yes"] (A-10);
+    \end{tikzpicture}
+}
+\end{center}

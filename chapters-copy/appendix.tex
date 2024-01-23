@@ -1,0 +1,49 @@
+\begin{chapter}{Justification of the logit transform}
+\section{Justification of the logit transform}
+Here we present an argument that the logit transformation should be used when optimising variables constrained to $(0,1)$, beyond the historical use of the logit transform in generalised linear models and its successful use in the copmuter experiments literature. The argument extends to any interval $(a, b)$ (with $|a| < \infty$, $|b| < \infty$). We also make some comments on replication.
+
+\subsection{Logit-Normal Simulations}
+
+Firstly, we address when the DM believes $\logit u(\bx)$ is a realisation of a Gaussian Process. If the DM believes this is the case, then by definition, we have
+
+\begin{equation}
+    \logit u(\bx) \sim N( m(\bx), C(\bx, \bx) + \lambda^2 (\bx)).
+\end{equation}
+
+If $n_{\bx}$ replicates are available at input $\bx$ then we have
+\begin{equation}
+    \overline{\logit u(\bx)} \sim N( m(\bx), C(\bx, \bx) + \frac{1}{n_{\bx}}\lambda^2 (\bx)).
+\end{equation}
+That is, we use use the mean of the logits when replication is available.
+
+\subsection{Beta Simulations}
+
+Now suppose the DM believes a Beta regression model is an appropriate representation of $u(\bx)$. That is, $u(\bx) \sim Beta( a(\bx), b(\bx))$.
+
+Further suppose
+\begin{align}
+  \log a(\cdot) &\sim \mathcal{GP}(m_a(\cdot), C_a(\cdot, \cdot))\\
+  \log b(\cdot) &\sim \mathcal{GP}(m_b(\cdot), C_b(\cdot, \cdot))
+\end{align}
+with  $\log a(\bx) $ and $\log b(\bx') $ following a bivariate Normal distribution for all $\bx$, $\bx'$ (which includes independence). We then have
+\begin{align}
+  U(\bx) &= \E(u(\bx))\\
+         &= \frac{a(\bx)}{a(\bx)+b(\bx)}\\
+         &= \frac{1}{1 + \frac{b(\bx)}{a(\bx)}} \label{Eq:fraction}
+\end{align}
+Now since $a(\bx)$ and $b(\bx)$ are log-Normally distributed, so is $b(\bx)/a(\bx)$. So we write
+\begin{equation}
+  \exp\{-W(\bx)\} = \frac{b(\bx)}{a(\bx)}
+\end{equation}
+where $-W(\cdot)$ is a Gaussian process. Now we can write \Cref{Eq:fraction} as
+\begin{equation}
+  U(\bx) =  \frac{1}{1 + \exp\{-W(\bx)\}}.
+\end{equation}
+Hence by definition of the logit, we have
+\begin{equation}
+  \logit U(\cdot) = W(\cdot) \sim \mathcal{GP}(m(\cdot), C(\cdot, \cdot)). \label{Eq:logit-gp}
+\end{equation}
+Where $m(\cdot)$ and $C(\cdot,\cdot)$ are linear combinations of the mean and covariance functions for $\log a(\cdot)$ and $\log b(\cdot)$. Even though we started specifying (symbolically) GPs for $\log a(\cdot)$ and $\log b(\cdot)$, because our focus is the expectation, we only need to work with the single GP given in \Cref{Eq:logit-gp}. This is simply a flexible mean function for Beta regression.
+
+In terms of replication, this means if the DM believes $u(\bx) \sim Beta(a(\bx), b(\bx))$, we should take take means before logits. This can be useful when storing large number of utilities is difficult. However, for many combinations of parameter settings, the Beta and Logit-Normal distributions will be similar. Hence, it isn't too critical when we take averages, so long as we are consistent.
+\end{chapter}

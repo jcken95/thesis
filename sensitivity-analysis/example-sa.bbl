@@ -1,0 +1,29 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Marrel et~al.]{Marrel, Iooss, Da~Veiga \harvardand\
+  Ribatet}{2012}{Marrel2012}
+Marrel, A., Iooss, B., Da~Veiga, S. \harvardand\ Ribatet, M.  \harvardyearleft
+  2012\harvardyearright , `Global sensitivity analysis of stochastic computer
+  models with joint metamodels', {\em Statistics and Computing} {\bf
+  22}(3),~833--847.
+
+\harvarditem{Sobol}{1993}{Sobol1993}
+Sobol, I.~M.  \harvardyearleft 1993\harvardyearright , `Sensitivity estimates
+  for nonlinear mathematical models', {\em Mathematical modelling and
+  computational experiments} {\bf 1}(4),~407--414.
+
+\harvarditem[Zitrou et~al.]{Zitrou, Bedford \harvardand\ Walls}{2016}{Zit16}
+Zitrou, A., Bedford, T. \harvardand\ Walls, L.  \harvardyearleft
+  2016\harvardyearright , `A model for availability growth with application to
+  new generation offshore wind farms', {\em Reliability Engineering and System
+  Safety} {\bf 152}(C),~83--94.
+
+\harvarditem[Zitrou et~al.]{Zitrou, Bedford, Walls, Wilson \harvardand\
+  Bell}{2013}{Zit13}
+Zitrou, A., Bedford, T., Walls, L., Wilson, K. \harvardand\ Bell, K.
+  \harvardyearleft 2013\harvardyearright , Availability growth and
+  state-of-knowledge uncertainty simulation for offshore wind farms, {\em in}
+  `22nd ESREL conference 2013'.
+\newline\harvardurl{https://strathprints.strath.ac.uk/45377/}
+
+\end{thebibliography}

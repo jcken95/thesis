@@ -1,0 +1,51 @@
+\begin{chapter}{Project Timeline}
+
+\section{Work So Far}
+
+The majority of my work to date is in \texttt{thesis.pdf}; a copy of a submitted article (\textit{Multilevel Emulation for Stochastic Computer Models with An Application to Large Offshore Windfarms}) is in \texttt{sml-paper.pdf}.
+
+\section{Future Work Timeline}
+
+\subsection{Planning Utility and Probability Elicitation}
+
+\textbf{Now --- May 2021} 
+
+In complex real world problems, there are many competing objectives a stakeholder (Decision maker/DM) might have to weigh up in order to come to a plan of action. The outcome of any decision the DM chooses to make might not be certain.
+
+In such scenarios, a sensible course of action to help the DM reach their decision is to apply Bayesian Decision Analysis to their problem.
+
+In the windfarm problem there are many competing objectives the decision maker aims to address: the upfront costs; the more long-term costs; energy output of the windfarm. The list of competing objectives could be quite large and the objectives themselves may differ between two different decision makers. Once a decision maker has finalised the objectives of their decision making problem, a \textit{utility function} can be elicited from the decision maker. A utility function ranks the \textit{consequences} that could be a result of a particular decision. The elicitation is a subjective process; it is often stressed that there is no ``correct'' utility function and that the DM should embrace subjectivity in coming to their conclusion.
+
+Elicitation is also required to elicit probablity distributions over the consquenes. There should be a different probability distribution associated to each possible decision.
+
+Therefore, reading will be undertaken to understand the theory and practice of Bayesian decision analysis, as well as elicitation of probability. There is considerable overlap between the two; see \citep{Smith2010}. A key method in the elicitation of probability and utility is eliciting a Bayesian Network. This is useful for structuring the DM's beliefs over unknowns in the decision problem and is useful for eliciting the set of attributes to the decision problem.
+
+
+Further to this, it is common to use software to assist an elicitation. For example, SHELF \citep{SHELF4}. Hence for the elicitation of utility I have started devleoping some R Shiny applications. For the elicitation of probability I might use existing software such as SHELF, or devleop my own software (e.g. another Shiny app) for probability elicitation. 
+
+I will also need to recruit (at least one) DM as to perform the elicitation(s). This could be an expert from academia or industry; conversations with Prof Tim Bedford and Prof Lesley Walls (both U. of Strathclyde) are currently underway which may lead to the recruitment of an expert/DM to be used in elicitation exercises.
+
+\subsection{Performing and Analysing An Elicitation}
+
+\textbf{June 2021 --- September 2021} 
+
+Once the elicitation has been planned (alongside the recruitment of experts/DMs) I will perform the elicition(s). The results of the elicitation will then be processed to perform a Bayesian decision analysis. The elicitation may take place in stages (to conduct sensitivity analyses which help understand the importance of parameters)
+
+In the Bayes Network above, the availabilty of a windfarm should be a feature; it is a direct measure of a windfarm's performance. To assess this, we can use the Athena simulator \citep{Zit13, Zit16}. However the Athena simulator is slow to run (and stochastic) so computing the expected utility of a decision will take an infeasible amount of time, let alone computing the expected utility of several possible decisions.
+
+Therefore, an emulator of the Athena simulator will be employed to reduce the computational cost by several orders of magnitude. I have already undertaken a significant amount of work producing adequate emulators of stochastic simulators; including making a novel contribution to the emulator literature.
+
+If the elicitation cannot proceed my project will take a more theoretical approach; perhaps considering the implications of using an emulator to assist a decision analysis. It would emphasise the use of stochastic simulators and their corresponding emulators.
+
+\subsection{Writing Up Phase}
+
+\textbf{October 2021 --- June 2022} 
+
+This time will be used to write my work into a thesis. This time is also likely to be used to write a paper on the probability/decision elicitation.
+
+\subsection{Contingency Time}
+
+\textbf{July 2022 --- September 2022} 
+
+This period of time towards the end of my PhD will be left reserved as contingency time. There may be delays in the elicitation process (especially due to the uncertainty surrounding Covid 19). It would therefore be sensible to leave myself some flexibility in the timings of my project.
+\end{chapter}

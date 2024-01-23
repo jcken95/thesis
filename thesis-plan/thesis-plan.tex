@@ -1,0 +1,142 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{bm}
+\usepackage{bbold}
+
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage[capitalise, noabbrev]{cleveref}
+
+\usepackage{booktabs}
+
+
+\usepackage{float}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\bbeta}{\bm{\beta}}
+\newcommand{\calX}{\mathcal{X}}
+\newcommand{\bx}{\bm{x}}
+\newcommand{\by}{\bm{y}}
+\newcommand{\bz}{\bm{z}}
+\newcommand{\E}{\text{E}}
+\newcommand{\cov}{\textrm{Cov}}
+\newcommand{\var}{\textrm{Var}}
+\newcommand{\dd}{\,\textrm{d}}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows}
+
+\usepackage{wrapfig}
+\usepackage{multicol}
+
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+%\renewcommand{\qedsymbol}{\filledbox}
+
+\title{Thesis Plan}%replace X with the appropriate number
+\author{Jack Kennedy} %if necessary, replace with your course title
+
+\maketitle
+
+\section{Thesis Structure}
+
+%%%%%%%%%%%
+\begin{itemize}
+	\item[1] Introduction
+	\begin{itemize}
+		\item Thesis aims and outline
+		\item Athena model
+		\item Bayesian methods - I am concerned with decision making and elicitation
+	\end{itemize}
+	\item[2] Emulators/GPs - Statistical analysis of complex computer models
+	\begin{itemize}
+		\item Introduction to Emulators: prior over functions (vs prior over individual parameters)
+		\item Stochastic vs deterministic, the nugget effect
+		\item Literature review on various emulation approaches
+		\item HetGPs - important special case
+		\begin{itemize}
+			\item Gramacy/Goldberg's HetGP
+			\item ``implied'' HetGPs e.g. DAH paper with 2 emulators, quantile kriging etc
+			\item Might be agood place to put some initial Athena emulators in e.g. the one used in my early talks?
+		\end{itemize}
+		\item Review on applications of emulators: focus on sensitivity, uncertainty propagation and decision making
+		\item Diagnostics
+	\end{itemize}
+	\item[3] Stochastic ML Emulators
+	\begin{itemize}
+		\item This will be very similar to paper
+		\item I can go into more detail though. I have used an EB approach to fit emulators but I could include the MAP estimate work for the full picture
+	\end{itemize}
+	\item[4] Sensitivity analysis for complex models
+	\begin{itemize}
+		\item Review of key approaches. Oakley and O'Hagan paper + Marrel paper v important
+		\item Also mentions other types of SA e.g. local SA?
+		\item Put my sensitivity analysis via hetgp and sml in here
+	\end{itemize}
+	\item[5] Bayesian Optimisation \& Decision support
+	\begin{itemize}
+		\item Outline bayesian optimisation
+		\item Outline history matching optimisation
+		\item Discuss decision making Vs decision support
+	\end{itemize}
+	\item[6] Wind farm optim problem
+	\begin{itemize}
+		\item Set scene with wind farm problem
+		\item Give and discuss results of my approach to the problem
+		\item Similar to a ``data analysis'' chapter
+	\end{itemize}
+	\item[7] Conclusions/discussion
+	\begin{itemize}
+		\item Summary of each thesis chapter (about $1$ paragraph each)
+		\item Loop back to start: ``In chapter X we did Y''
+		\item Future work
+		\begin{itemize}
+			\item Designs for SML Emulators
+			\item We could investigate senstivity to the optimal decision using Oakley's method. NB this would be tricky because we have a discrete simplex valued component i.e. correlated inputs.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\section{Work timeline}
+The plan is to spend $\sim 3$ weeks constructing a first draft of each chapter. Roughly as follows
+
+\begin{itemize}
+	\item January - emulators
+	\item Janury/Febuary - SML emulators and HetGPs
+	\item Revise emulators
+	\item Febuary/March - Sensitivity analysis
+	\item Revise SML/HGP
+	\item March - Bayesian Optimisation, Decision support
+	\item Revise SA
+	\item April - Wind farm optimisation problem
+	\item Revise BayesOpt/DS
+	\item April/June - Intro
+	\item Revise wind farm optim
+	\item June/July - Conclusions
+	\item Revise intro
+	\item Revise conclusions
+\end{itemize}
+
+
+
+%\bibliographystyle{agsm}	%BibTeX (.bst) style file
+
+\end{document}

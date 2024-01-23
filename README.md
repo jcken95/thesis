@@ -1,2 +1,3 @@
-# thesis
-My PhD thesis, titled Uncertainty Quantification for Stochastic Simulators with Application to Offshore Wind Farms.
+J kennedy thesis
+
+j.c.kennedy1@ncl.ac.uk
